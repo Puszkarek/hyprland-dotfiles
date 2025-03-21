@@ -1,0 +1,2237 @@
+:root {
+  --theme-body-font-size: 11px;
+  --theme-code-font-size: 11px;
+  --theme-code-line-height: calc(15 / 11);
+  --theme-toolbar-height: 24px;
+  --theme-toolbar-tall-height: 28px;
+  --theme-focus-outline-color: var(--primary-color);
+  --theme-focus-textinput-outline-color: var(--primary-color);
+  --theme-focus-outline-size: 1px;
+  --theme-focus-outline: var(--theme-focus-outline-size) solid
+    var(--theme-focus-outline-color);
+  --theme-outline-offset: 0px;
+  --theme-outline-box-shadow-size: calc(
+    2px + var(--theme-focus-outline-size) + var(--theme-outline-offset)
+  );
+  --theme-outline-box-shadow: 0 0 0 var(--theme-outline-box-shadow-size)
+    var(--theme-body-background);
+  --expression-item-height: 20.5px;
+  --animation-curve: cubic-bezier(0.07, 0.95, 0, 1);
+  --dimmed-highlighter-box-content-color: hsl(197, 71%, 73%, 0.3);
+  --magenta-50: #ff1ad9;
+  --magenta-65: #dd00a9;
+  --magenta-70: #b5007f;
+  --purple-50: #9400ff;
+  --purple-60: #8000d7;
+  --purple-30: #c069ff;
+  --blue-30: #75baff;
+  --blue-40: #45a1ff;
+  --blue-50: #0a84ff;
+  --blue-50-a30: rgba(10, 132, 255, 0.3);
+  --blue-55: #0074e8;
+  --blue-60: #0060df;
+  --blue-70: #003eaa;
+  --blue-80: #002275;
+  --teal-60: #00c8d7;
+  --teal-70: #008ea4;
+  --green-50: #30e60b;
+  --green-60: #12bc00;
+  --green-70: #058b00;
+  --yellow-50: #ffe900;
+  --yellow-60: #d7b600;
+  --yellow-65: #be9b00;
+  --yellow-70: #a47f00;
+  --yellow-75: #8b6801;
+  --yellow-80: #715100;
+  --red-05: #ffe6e8;
+  --red-20: #ffb3d2;
+  --red-40: #ff3b6b;
+  --red-40-a90: rgba(255, 59, 107, 0.9);
+  --red-50: #ff0039;
+  --red-60: #d70022;
+  --red-70: #a4000f;
+  --grey-10: #f9f9fa;
+  --grey-10-a20: rgba(249, 249, 250, 0.2);
+  --grey-10-a25: rgba(249, 249, 250, 0.25);
+  --grey-10-a30: rgba(249, 249, 250, 0.3);
+  --grey-20: #ededf0;
+  --grey-25: #e0e0e2;
+  --grey-30: #d7d7db;
+  --grey-40: #b1b1b3;
+  --grey-43: #a4a4a4;
+  --grey-45: #939395;
+  --grey-50: #737373;
+  --grey-55: #5c5c5f;
+  --grey-60: #4a4a4f;
+  --grey-70: #38383d;
+  --grey-80: #2a2a2e;
+  --grey-85: #1b1b1d;
+  --grey-90: #0c0c0d;
+  --grey-90-a10: rgba(12, 12, 13, 0.1);
+  --grey-90-a20: rgba(12, 12, 13, 0.2);
+  --grey-90-a30: rgba(12, 12, 13, 0.3);
+  --theme-body-background: var(--primary-background);
+  --theme-body-emphasized-background: var(--secondary-background);
+  --theme-body-alternate-emphasized-background: var(--secondary-background);
+  --theme-sidebar-background: var(--secondary-background);
+  --theme-tab-toolbar-background: transparent;
+  --theme-toolbar-background: transparent;
+  --theme-toolbar-color: var(--primary-color);
+  --theme-toolbar-selected-color: var(--secondary-color);
+  --theme-toolbar-highlighted-color: var(--secondary-color);
+  --theme-toolbar-background-hover: transparent;
+  --theme-toolbar-background-alt: light-dark(#f5f5f5, var(--grey-85));
+  --theme-toolbar-background-highlighted: light-dark(#b9dcff, var(--blue-60));
+  --theme-toolbar-error-background: light-dark(var(--red-05), var(--red-70));
+  --theme-toolbar-hover: var(--secondary-color);
+  --theme-toolbar-hover-active: var(var(--secondary-color));
+  --theme-toolbar-separator: var(--primary-color);
+  --toolbarbutton-background: transparent;
+  --toolbarbutton-hover-background: transparent;
+  --toolbarbutton-focus-background: transparent;
+  --toolbarbutton-focus-color: var(--secondary-color);
+  --toolbarbutton-checked-background: transparent;
+  --toolbarbutton-checked-focus-background: transparent;
+  --toolbarbutton-checked-color: var(--tertiary-color);
+  --theme-button-background: light-dark(
+    rgba(12, 12, 13, 0.05),
+    rgba(249, 249, 250, 0.1)
+  );
+  --theme-button-active-background: light-dark(
+    rgba(12, 12, 13, 0.1),
+    rgba(249, 249, 250, 0.15)
+  );
+  --theme-accordion-header-background: light-dark(
+    var(--theme-toolbar-background),
+    #232327
+  );
+  --theme-accordion-header-hover: light-dark(
+    var(--theme-toolbar-hover),
+    #2a2a2e
+  );
+  --theme-selection-background: #0a7470d6;
+  --theme-selection-background-hover: #0a7470d6;
+  --theme-selection-focus-background: #33ff004a;
+  --theme-selection-color: #ffb000;
+  --theme-text-selection-background: #0a7470d6;
+  --theme-text-selection-unfocused-background: #0a7470d6;
+  --theme-splitter-color: light-dark(var(--grey-25), var(--grey-70));
+  --theme-emphasized-splitter-color: light-dark(var(--grey-30), var(--grey-60));
+  --theme-emphasized-splitter-color-hover: light-dark(
+    var(--grey-40),
+    var(--grey-50)
+  );
+  --theme-icon-color: #33ff00;
+  --theme-icon-hover-color: #ffb000;
+  --theme-icon-dimmed-color: light-dark(
+    rgba(135, 135, 137, 0.9),
+    rgba(147, 147, 149, 0.9)
+  );
+  --theme-icon-disabled-color: #bbffac;
+  --theme-icon-checked-color: #ffb000;
+  --theme-icon-error-color: #ff2e6e;
+  --theme-icon-warning-color: #eeff00;
+  --theme-comment: #bbffac;
+  --theme-body-color: #33ff00;
+  --theme-link-color: #00e1ff;
+  --theme-internal-link-color: #00e1ff;
+  --theme-text-color-alt: light-dark(var(--grey-50), var(--grey-45));
+  --theme-text-color-inactive: light-dark(var(--grey-40), var(--grey-50));
+  --theme-text-color-error: light-dark(var(--red-60), var(--grey-10));
+  --theme-text-color-strong: light-dark(var(--grey-90), var(--grey-30));
+  --theme-stack-trace-text: light-dark(var(--red-70), var(--red-20));
+  --theme-highlight-green: light-dark(var(--green-70), #86de74);
+  --theme-highlight-blue: light-dark(var(--blue-55), #75bfff);
+  --theme-highlight-purple: light-dark(var(--blue-70), #b98eff);
+  --theme-highlight-red: light-dark(var(--magenta-65), #ff7de9);
+  --theme-highlight-yellow: #fff89e;
+  --theme-highlight-bluegrey: light-dark(#0072ab, #5e88b0);
+  --theme-highlight-lightorange: light-dark(#d97e00, #d99b28);
+  --theme-highlight-orange: light-dark(#f13c00, #d96629);
+  --theme-highlight-pink: light-dark(#b82ee5, #df80ff);
+  --theme-highlight-gray: light-dark(#dde1e4, #e9f4fe);
+  --theme-graphs-purple: light-dark(#b693eb, #df80ff);
+  --theme-graphs-yellow: light-dark(#efc052, #d99b28);
+  --theme-graphs-orange: light-dark(#d97e00, #d96629);
+  --theme-graphs-grey: light-dark(#cccccc, #757873);
+  --theme-graphs-full-red: #ff2e6e;
+  --theme-popup-background: #121a12;
+  --theme-popup-color: #33ff00;
+  --theme-popup-border-color: #33ff00;
+  --theme-popup-dimmed: light-dark(
+    hsla(0, 0%, 80%, 0.3),
+    rgba(249, 249, 250, 0.1)
+  );
+  --theme-popup-hover-background: var(--theme-popup-dimmed);
+  --theme-popup-hover-color: var(--theme-popup-color);
+  --theme-toolbarbutton-background: none;
+  --theme-toolbarbutton-color: light-dark(var(--grey-70), var(--grey-40));
+  --theme-toolbarbutton-hover-background: color-mix(
+    in srgb,
+    currentColor 14%,
+    transparent
+  );
+  --theme-toolbarbutton-checked-background: transparent;
+  --theme-toolbarbutton-checked-color: var(--tertiary-color);
+  --theme-toolbarbutton-checked-hover-background: transparent;
+  --theme-toolbarbutton-checked-hover-color: var(--secondary-color);
+  --theme-toolbarbutton-active-background: transparent;
+  --theme-select-background: transparent;
+  --theme-select-color: var(--secondary-color);
+  --theme-select-hover-border-color: var(--secondary-color);
+  --theme-warning-background: light-dark(hsl(54, 100%, 92%), hsl(42, 37%, 19%));
+  --theme-warning-border: light-dark(
+    rgba(215, 182, 0, 0.28),
+    hsl(60, 30%, 26%)
+  );
+  --theme-warning-color: light-dark(var(--yellow-80), hsl(43, 94%, 81%));
+  --theme-contrast-background: light-dark(#fff699, #4f4b1f);
+  --theme-contrast-background-alpha: light-dark(
+    rgba(255, 233, 0, 0.4),
+    rgba(255, 233, 0, 0.15)
+  );
+  --theme-contrast-color: light-dark(black, white);
+  --theme-contrast-border: light-dark(var(--yellow-70), var(--yellow-65));
+  --theme-search-results-background: var(--theme-contrast-background);
+  --theme-search-results-color: var(--theme-contrast-color);
+  --theme-search-results-border-color: var(--theme-contrast-border);
+}
+
+:root {
+  --text-color: #e4d5ea;
+
+  --primary-color: #33ff00;
+  --primary-color-hover: #b200cc;
+  --primary-color-disabled: #c3a7d1;
+
+  --secondary-color: #ffb000;
+  --secondary-color-hover: #ffb000;
+  --secondary-color-disabled: #fff;
+
+  --tertiary-color: #ffd700;
+  --tertiary-color-hover: #fff;
+  --tertiary-color-disabled: #d1caa7;
+
+  --indicador-color: rgba(225, 0, 255, 0.3);
+  --backdrop-color: rgba(41, 0, 47, 0.5);
+  --backdrop-hover-color: rgba(41, 0, 47, 0.3);
+  --backdrop-active-color: rgba(41, 0, 47, 0.7);
+
+  --hover-color: #ffb000;
+  --selection-color: #33ff004a;
+  --active-color: #ffb000;
+  --active-disabled-color: #d1caa7;
+
+  --accent-color: #ffb000;
+  --accent-color-hover: #ffb000;
+  --highlight-color: #9d00b3;
+
+  --primary-background-hover: transparent;
+  --primary-backdrop-background: #0a0e0a;
+  --secondary-background: #121a12;
+  --secondary-background-hover: transparent;
+
+  --yellow: #ffd700;
+  --orange: #ffa500;
+  --red: #ff2e6e;
+  --green: #00ff00;
+  --cyan: #ffb000;
+  --purple: #33ff00;
+
+  --vertical-tabs-scrollbar-color: var(--primary-background);
+  --vertical-tabs-scrollbar-color: var(--primary-background);
+  --background-color: var(--primary-background);
+  --arrowpanel-background: var(--secondary-background);
+  --background-color-box: var(--secondary-background);
+  --background-color-canvas: Canvas;
+  --background-color-critical: light-dark(#ffe8e8, #690f22);
+  --background-color-information: light-dark(#deeafc, #003070);
+  --background-color-success: light-dark(#d8eedc, #004725);
+  --background-color-warning: light-dark(#ffebcd, #5a3100);
+  --button-background-color: transparent;
+  --button-background-color-active: transparent;
+  --button-background-color-destructive: light-dark(#d7264c, #f37f98);
+  --button-background-color-destructive-active: light-dark(#8a1831, #ffe8e8);
+  --button-background-color-destructive-disabled: light-dark(#d7264c, #f37f98);
+  --button-background-color-destructive-hover: light-dark(#ac1e3d, #ffbdc5);
+  --button-background-color-disabled: transparent;
+  --button-background-color-ghost: transparent;
+  --button-background-color-ghost-active: transparent;
+  --button-background-color-ghost-disabled: transparent;
+  --button-background-color-ghost-hover: transparent;
+  --button-background-color-hover: transparent;
+  --button-background-color-primary: transparent;
+  --button-background-color-primary-active: transparent;
+  --button-background-color-primary-disabled: transparent;
+  --button-background-color-primary-hover: transparent;
+  --ext-theme-background-transition: background-color 0.1s
+    cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  --in-content-button-background: transparent;
+  --in-content-button-background-hover: transparent;
+  --in-content-page-background: color-mix(
+    in srgb,
+    #ffb787 1%,
+    light-dark(#ebebeb, #202020) 99%
+  );
+  --in-content-primary-button-background: transparent;
+  --in-content-primary-button-background-active: transparent;
+  --in-content-primary-button-background-hover: transparent;
+  --lwt-background-alignment: right top;
+  --lwt-background-tiling: no-repeat;
+  --newtab-background-color: var(--primary-background);
+  --newtab-background-color-secondary: var(--secondary-background);
+  --panel-banner-item-background-color: transparent;
+  --primary-backdrop-background: var(--primary-backdrop-background);
+  --primary-background: #0a0e0a;
+  --primary-background-hover: #111611;
+  --secondary-background: #121a12;
+  --secondary-background-hover: #21243c;
+  --short-notification-background: #0250bb;
+  --sidebar-background-color: var(--secondary-background);
+  --tab-collapsed-background-width: 36px;
+  --tab-hover-background-color: transparent;
+  --tab-pinned-expanded-background-width: 40px;
+  --tabpanel-background-color: transparent;
+  --toolbar-field-background-color: transparent;
+  --toolbar-field-focus-background-color: transparent;
+  --toolbarbutton-active-background: transparent;
+  --toolbarbutton-hover-background: transparent;
+  --urlbarView-action-button-background-color: transparent;
+  --urlbarView-action-button-hover-background-color: transparent;
+  --urlbarView-highlight-background: transparent;
+  --urlbarView-hover-background: transparent;
+  --urlbarView-result-button-background-opacity: 60%;
+  --urlbarView-result-button-hover-background-color: transparent;
+  --urlbarView-result-button-selected-background-color: inherit;
+  --zen-dialog-background: light-dark(#ebebeb, #202020);
+  --zen-in-content-dialog-background: light-dark(#ebebeb, #202020);
+  --zen-main-browser-background: #0a0e0a;
+  --zen-main-browser-background-toolbar: #0a0e0a;
+  --zen-urlbar-background: var(--primary-background);
+
+  --arrowpanel-border-radius: 0;
+  --arrowpanel-menuitem-border-radius: 0;
+  --border-radius-circle: 0;
+  --zen-dialog-background: var(--secondary-background);
+  --toolbarbutton-icon-fill: var(--primary-color);
+  --toolbarbutton-active-background: transparent;
+  --panel-separator-color: var(--primary-color);
+  --zen-colors-border: var(--primary-color);
+
+  --urlbar-box-hover-text-color: var(--secondary-color);
+  --toolbarbutton-hover-outline-color: var(--secondary-color);
+  --panel-item-hover-bgcolor: transparent;
+  --panel-item-active-bgcolor: transparent;
+  --theme-body-color: var(--primary-color);
+  --theme-popup-background: var(--secondary-color);
+  --theme-tab-toolbar-background: var(--secondary-background);
+
+  --toolbar-color: var(--primary-color);
+}
+
+:root {
+  &[lwtheme] {
+    --link-color: #00e1ff;
+    --tabs-navbar-separator-color: #33ff00;
+    --attention-dot-color: #00e1ff;
+    --toolbox-bgcolor: #0a0e0a;
+    --toolbox-bgcolor-inactive: #0a0e0a;
+    --toolbox-textcolor: #33ff00;
+    --toolbox-textcolor-inactive: #bbffac;
+  }
+}
+
+#navigator-toolbox {
+  --border-radius-medium: 0;
+  --tab-border-radius: 0;
+}
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  --zen-border-radius: 0;
+}
+
+#browser,
+#tabbrowser-tabpanels {
+  border: 1px solid var(--primary-color);
+}
+
+#browser {
+  --zen-main-browser-background: var(--primary-background);
+}
+
+.urlbar-input-container {
+  --toolbarbutton-border-radius: 0;
+  border-radius: 0;
+}
+
+#nav-bar {
+  outline: 1px solid var(--primary-color);
+}
+
+.tabbrowser-tab:hover {
+  background-color: transparent;
+  background: transparent;
+  color: var(--secondary-color);
+  border: 1px solid black;
+}
+
+#tabbrowser-tabs {
+  --tab-selected-bgcolor: none;
+  color: var(--primary-color);
+  --tab-selected-textcolor: var(--secondary-color);
+  --tab-hover-background-color: transparent;
+}
+
+.tabbrowser-tab {
+  border: 1px solid transparent;
+}
+
+.tabbrowser-tab:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.toolbarbutton {
+  color: var(--primary-color);
+}
+
+#navigator-toolbox {
+  --border-radius-medium: 0;
+  --tab-border-radius: 0;
+  --tab-hover-background-color: transparent;
+  --toolbarbutton-hover-background: transparent;
+  --toolbarbutton-hover-outline-color: var(--primary-color);
+}
+
+toolbarbutton:hover {
+  color: var(--secondary-color);
+}
+
+toolbarbutton:active {
+  background-color: transparent;
+}
+
+#urlbar-background {
+  --zen-toolbar-element-bg: transparent;
+  outline: 1px solid var(--primary-color);
+}
+
+#urlbar {
+  --toolbarbutton-border-radius: 0;
+}
+
+#urlbar {
+  --toolbarbutton-border-radius: 0;
+  --urlbarView-separator-color: var(--primary-color);
+  --urlbarView-hover-background: transparent;
+  --urlbarView-highlight-background: transparent;
+}
+
+.urlbarView-row {
+  border: 1px solid transparent;
+  margin: 0 3px;
+  &:hover {
+    color: var(--primary-color);
+    background-color: transparent !important;
+    border: 1px solid var(--secondary-color);
+  }
+}
+
+#titlebar {
+  ----zen-colors-border-contrast: var(--primary-color);
+  --zen-dialog-background: var(--primary-background);
+  border: 1px solid var(--primary-color) !important;
+}
+
+@media (-moz-bool-pref: "zen.view.compact") {
+  :root:not([customizing]):not([inDOMFullscreen="true"]) {
+    @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") or (-moz-bool-pref: "zen.view.use-single-toolbar") {
+      & #navigator-toolbox:not([animate="true"]) #titlebar {
+        background: var(--secondary-background) !important;
+        outline-color: var(--primary-color) !important;
+      }
+    }
+  }
+}
+
+.urlbarView-url {
+  color: var(--primary-color) !important;
+}
+
+#urlbar:is([focused], [open]) {
+  --toolbar-field-focus-color: var(--primary-color);
+}
+
+.urlbarView-row {
+  &:hover {
+    color: var(--secondary-color);
+    & .urlbarView-url,
+    & .urlbarView-title-separator::before {
+      color: var(--secondary-color) !important;
+    }
+  }
+}
+
+.urlbarView-row {
+  &:hover {
+    & .urlbarView-favicon {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.urlbarView-row {
+  &[selected] {
+    --urlbarView-highlight-color: var(--secondary-color);
+  }
+}
+
+.urlbarView-title-separator::before {
+  color: var(--secondary-color) !important;
+}
+
+panel toolbarseparator {
+  --panel-separator-color: var(--primary-color);
+}
+
+toolbar .toolbarbutton-1 {
+  & > .toolbarbutton-icon,
+  & > .toolbarbutton-text,
+  & > .toolbarbutton-badge-stack {
+    --toolbarbutton-border-radius: 0;
+    --toolbarbutton-outline: transparent;
+  }
+}
+
+#urlbar {
+  --zen-colors-border: var(--primary-color);
+  --urlbarView-separator-color: var(--primary-color);
+}
+
+#urlbar[open] {
+  border: 1px solid var(--primary-color) !important;
+  background-color: var(--secondary-background) !important;
+  & #urlbar-background {
+    outline-color: transparent !important;
+    background-color: transparent !important;
+    margin: 0;
+    border: 1px solid transparent !important;
+  }
+}
+
+.toolbarbutton-badge-stack,
+.toolbarbutton-icon {
+  fill: var(--secondary-color);
+}
+
+:is(menupopup, panel):where([type="arrow"]) {
+  --arrowpanel-background: var(--secondary-background);
+  --arrowpanel-color: var(--secondary-color);
+  --panel-color: var(--secondary-color);
+  --panel-border-radius: 0;
+}
+
+:is(
+    panelview .toolbarbutton-1,
+    toolbarbutton.subviewbutton,
+    .widget-overflow-list .toolbarbutton-1,
+    .toolbaritem-combined-buttons:is(
+        :not([cui-areatype="toolbar"]),
+        [overflowedItem="true"]
+      )
+      > toolbarbutton
+  ) {
+  --panel-item-hover-bgcolor: transparent;
+  --panel-item-active-bgcolor: transparent;
+
+  &:not([disabled]):hover {
+    background: transparent;
+    outline: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+}
+
+:is(
+    panelview .toolbarbutton-1,
+    toolbarbutton.subviewbutton,
+    .widget-overflow-list .toolbarbutton-1,
+    .toolbaritem-combined-buttons:is(
+        :not([cui-areatype="toolbar"]),
+        [overflowedItem="true"]
+      )
+      > toolbarbutton
+  ) {
+  &:not([disabled]):hover {
+    &:active {
+      --panel-item-active-bgcolor: transparent;
+    }
+  }
+}
+
+menu,
+menuitem {
+  color: var(--primary-color);
+}
+
+menu,
+menuitem {
+  &:where([_moz-menuactive]:not([disabled="true"])) {
+    background-color: transparent;
+    color: var(--secondary-color);
+  }
+}
+
+#urlbar:not([breakout-extend="true"])
+  #identity-box.chromeUI:not([pageproxystate="invalid"])
+  #identity-icon-box {
+  border-radius: 0 !important;
+}
+
+#identity-box.chromeUI:not([pageproxystate="invalid"]) {
+  & #identity-icon-box {
+    background: transparent !important;
+  }
+}
+
+.urlbar-page-action {
+  color: var(--primary-color);
+  border-radius: 0;
+  --urlbar-box-hover-bgcolor: transparent;
+}
+
+#urlbar .urlbar-page-action,
+#urlbar #tracking-protection-icon-container,
+#urlbar:not([breakout-extend="true"])
+  #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"])
+  #identity-icon-box {
+  border-radius: 0 !important;
+}
+
+.urlbar-input-container {
+  color: var(--primary-color);
+}
+
+.urlbar-input-container:hover {
+  color: var(--secondary-color);
+}
+
+.tab-background {
+  &:is([selected], [multiselected]) {
+    --tab-selected-bgcolor: none;
+    --tab-selected-shadow: none;
+    --tab-selected-outline-color: var(--secondary-color);
+  }
+}
+
+.tab-background {
+  --border-radius-medium: 0;
+
+  .tabbrowser-tab:hover > .tab-stack > &:not([selected], [multiselected]) {
+    --tab-hover-background-color: transparent;
+    --tab-hover-outline-color: var(--primary-color);
+  }
+}
+
+#vertical-pinned-tabs-container-separator {
+  background: var(--primary-color) !important;
+}
+
+:root {
+  --arrowpanel-menuitem-border-radius: 0;
+
+  --uc-contextmenu-border-radius: 0;
+  --uc-contextmenu-menuitem-border-radius: 0;
+
+  --zen-colors-border: var(--primary-color);
+  ---zen-panel-radius: 0;
+  --panel-border-radius: 0;
+  --panel-item-hover-bgcolor: transparent;
+  --panel-item-active-bgcolor: transparent;
+}
+
+menuseparator::before {
+  --panel-separator-color: var(--primary-color);
+}
+
+menupopup,
+panel {
+  --arrowpanel-background: var(--secondary-background);
+  --zen-appcontent-border: 1px solid var(--primary-color);
+  --panel-border-radius: 0;
+  ---zen-panel-radius: 0;
+  --panel-item-hover-bgcolor: transparent;
+  --panel-item-active-bgcolor: transparent;
+  border-radius: 0;
+}
+
+menupopup,
+panel {
+  &::part(content) {
+    --panel-border-radius: 0;
+  }
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/* app menu */
+.addon-banner-item,
+.panel-banner-item {
+  --arrowpanel-menuitem-border-radius: 0;
+}
+
+/* firefox profile avatar in appmenu */
+#appMenu-fxa-label2::before {
+  border-radius: 0;
+}
+
+/* zoom controls */
+#appMenu-zoom-controls {
+  --panel-separator-color: var(--primary-color);
+}
+
+#appMenu-zoom-controls > #appMenu-fullscreen-button2::before {
+  --panel-separator-color: var(--primary-color);
+}
+
+#appMenu-zoomReduce-button2:not([disabled], [open], :active):is(:hover),
+#appMenu-zoomEnlarge-button2:not([disabled], [open], :active):is(:hover),
+#appMenu-fullscreen-button2:not([disabled], [open], :active):is(:hover),
+#appMenu-zoomReset-button2:not([disabled], [open], :active):is(:hover) {
+  --panel-item-hover-bgcolor: transparent;
+  --panel-item-active-bgcolor: transparent;
+}
+
+#appMenu-zoomReduce-button2:not([disabled]):is([open], :hover:active),
+#appMenu-zoomEnlarge-button2:not([disabled]):is([open], :hover:active),
+#appMenu-fullscreen-button2:not([disabled]):is([open], :hover:active),
+#appMenu-zoomReset-button2:not([disabled]):is([open], :hover:active) {
+  --panel-item-hover-bgcolor: transparent;
+  --panel-item-active-bgcolor: transparent;
+}
+
+menupopup::part(content),
+panel::part(content) {
+  --zen-appcontent-border: 1px solid var(--primary-color);
+}
+
+/* Context menu */
+menu,
+menuitem {
+  &:where([_moz-menuactive]:not([disabled="true"])) {
+    --button-hover-bgcolor: transparent;
+    --button-hover-color: var(--secondary-color);
+  }
+}
+
+.workspace-trigger {
+  --input-border-color: var(--primary-color);
+  border-radius: 0;
+  --zen-colors-tertiary: var(--secondary-background);
+}
+
+#editBMPanel_workspaceList {
+  --zen-colors-border: var(--primary-color);
+  border-radius: 0;
+  --zen-colors-tertiary: var(--secondary-background);
+  background-color: var(--zen-colors-tertiary);
+  box-shadow: none;
+}
+
+toolbar {
+  --toolbarbutton-active-background: transparent;
+}
+
+#nav-bar-overflow-button {
+  height: 26px;
+  width: 26px;
+  margin-right: 2px !important;
+}
+
+.identity-box-button,
+#tracking-protection-icon-container {
+  &:hover:not([open="true"]) {
+    --urlbar-box-hover-bgcolor: transparent;
+    --urlbar-box-hover-text-color: var(--secondary-color);
+  }
+}
+
+.identity-box-button,
+#tracking-protection-icon-container {
+  &:hover:active,
+  &[open="true"] {
+    --urlbar-box-active-bgcolor: transparent;
+    --toolbarbutton-active-outline-color: var(--secondary-color);
+  }
+}
+
+
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* Webconsole specific theme variables */
+:root {
+  /* Minimum height of a message (excluding borders) */
+  --console-row-height: 20px;
+  /* We need a unitless line-height to render formatted messages correctly.
+   * Target line-height computed value is 14px, for a 11px font-size. */
+  --console-output-line-height: calc(14 / 11);
+  --console-output-vertical-padding: 3px;
+  /* Additional vertical padding used on the JSTerm and EagerEvaluation
+   * containers. Set to 0 to make the messages and input seamless. */
+  --console-input-extra-padding: 2px;
+  /* Width of the left gutter where icons appear */
+  --console-inline-start-gutter: 32px;
+  /* Icons perfectly centered in the left gutter "feel" closer to the window
+   * edge than to message text. This value pushes them slightly to the right. */
+  --console-icon-horizontal-offset: 1px;
+  --console-warning-background: #0a0e0a;
+  --console-warning-border: #eeff00;
+  --console-warning-color: #eeff00;
+
+  --console-input-background: #0a0e0a;
+  --console-message-background: #0a0e0a;
+  --console-message-border: #33ff00;
+  --console-message-color: var(--theme-text-color-strong);
+  --console-error-background: #0a0e0a;
+  --console-error-border: #ff2e6e;
+  --console-error-color: #ff2e6e;
+  --console-navigation-color: var(--theme-highlight-blue);
+  --console-navigation-border: #33ff00;
+  --console-indent-border-color: #33ff00;
+  --console-repeat-bubble-background: #0a0e0a;
+
+  /* TODO in bug 1549195: colors used in shared components (e.g. Reps) should
+     be renamed and/or moved to variables.css so they work everywhere */
+  --error-color: #ff2e6e;
+  --console-output-color: light-dark(var(--grey-90), white);
+
+  --console-tracer-dom-background: light-dark(var(--blue-55), #204e8a);
+  --console-tracer-dom-color: white;
+}
+
+/* General output styles */
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+ * Stack messages on the z axis so that we can make their borders overlap
+ * and show color borders on top:
+ *
+ *   -----------------  <-- Red
+ *   Error message
+ *   -----------------  <-- Red
+ *   Normal message
+ *   -----------------  <-- Grey
+ *
+ * and:
+ *
+ *   -----------------  <-- Grey
+ *   Normal message
+ *   -----------------  <-- Red
+ *   Error message
+ *   -----------------  <-- Red
+ *
+ * The exact stacking order is:
+ *
+ *   - z-index: 3 = Navigation
+ *   - z-index: 2 = Errors and warnings
+ *   - z-index: 1 = Other (console.log, console.info, requests, etc.)
+ */
+.message {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  /* Make the top border cover the previous message's bottom border */
+  margin-top: -1px;
+  /* Min height is the target row height plus borders */
+  min-height: calc(var(--console-row-height) + 2px);
+  border-top: 1px solid var(--console-message-border);
+  border-bottom: 1px solid var(--console-message-border);
+  /* Avoid vertical padding, so that we can draw full-height items (e.g. indent guides).
+   * Use vertical margins of --console-output-vertical-padding on children instead. */
+  padding-block: 0;
+  /* Layout of the 32px-wide left gutter:
+   * | 4px message padding | 24px icon container | 4px icon margin |
+   * Note: on hover we show a 3px pseudo-border on top of the left padding. */
+  padding-inline-start: 4px;
+  padding-inline-end: 8px;
+  font-size: var(--theme-code-font-size);
+  line-height: var(--console-output-line-height);
+  color: var(--console-message-color);
+  background-color: var(--console-message-background);
+}
+
+@media (min-width: 1000px) {
+  .message {
+    padding-inline-end: 12px;
+  }
+}
+
+/* Always hide the border of the first message, but keep its spacing */
+.message:first-child {
+  border-top-color: transparent !important;
+}
+
+/* We already paint a top border on jsterm-input-container (and we need to keep
+ * it when scrolling console content), so remove the last item's border. (NOTE:
+ * the last element is actually the second-to-last element when the output is
+ * scrolled all the way down, because we include an empty buffer div which
+ * grows to simulate the height of unrendered content.) */
+.webconsole-app:not(.jsterm-editor) .message:nth-last-child(2) {
+  border-bottom-width: 0;
+  /* Adjust the min-height since we now only have a single border. */
+  min-height: calc(var(--console-row-height) + 1px);
+}
+
+/*
+ * By default, prevent any element in message to overflow.
+ * We exclude network messages as it may cause issues in the network detail panel.
+ * This makes console reflows faster (See Bug 1487457).
+ */
+.message:not(.network) * {
+  overflow: hidden;
+}
+
+.message.disabled {
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.message.error {
+  z-index: 2;
+  color: var(--console-error-color);
+  border-color: var(--console-error-border);
+  background-color: var(--console-error-background);
+}
+
+.message.warn {
+  z-index: 2;
+  color: var(--console-warning-color);
+  border-color: var(--console-warning-border);
+  background-color: var(--console-warning-background);
+}
+
+.message.navigationMarker {
+  z-index: 3;
+  color: var(--console-navigation-color);
+  border-color: var(--console-navigation-border);
+}
+
+.message.startGroup,
+.message.startGroupCollapsed {
+  --console-indent-border-color: transparent;
+}
+
+/* Hide border between a command and its result */
+.message.command + .result.log {
+  border-top-width: 0;
+}
+
+.message > .prefix,
+.message > .timestamp {
+  flex: none;
+  color: var(--theme-comment);
+  margin: var(--console-output-vertical-padding) 4px;
+}
+
+/* Use a container query as the inline-size of the output might vary when the console is in editor mode */
+@container console-output (width < 500px) {
+  /*
+   * When we export messages, we mount the app as a sibling of the #app-wrapper element,
+   * in a 0-width section which would cause the timestamp to be hidden, so only hide
+   * the timestamp in the "visible" element.
+   */
+  #app-wrapper .message > .timestamp {
+    display: none;
+  }
+
+  /**
+   * This element might have:
+   * - the message body
+   * - the repeat bubble
+   * - the location
+   *
+   * What we want here is to display the location one its own line, at the bottom of the
+   * element:
+   * +----------------------------+
+   * |  Message body   | [repeat] |
+   * +----------------------------+
+   * |                   location |
+   * +----------------------------+
+   */
+  .message:not(.message-did-catch) .message-flex-body:not(.error-note) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 8px;
+  }
+
+  .message-flex-body .message-location {
+    max-width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: end;
+  }
+}
+
+.message > .indent {
+  flex: none;
+  display: inline-block;
+  /* Display indent borders above the message's top and bottom border.
+   * This avoids interrupted indent lines (looking like dashes). */
+  margin-block: -1px;
+  margin-inline-start: 12px;
+  border-inline-end: solid 1px var(--console-indent-border-color);
+}
+
+.message > .indent.warning-indent {
+  border-inline-end-color: var(--console-warning-color);
+  /* Align the border of the message in warning groups with the toggle icon */
+  margin-inline-start: 15px;
+}
+
+/* Center first level indent within the left gutter */
+.message[data-indent="1"]:not(.startGroup, .startGroupCollapsed) > .indent,
+.warning-indent {
+  margin-inline-start: calc(1px + var(--console-icon-horizontal-offset));
+  margin-inline-end: calc(11px - var(--console-icon-horizontal-offset));
+}
+
+.message > .icon {
+  flex: none;
+  align-self: flex-start;
+  /* Width and height must be a multiples of 2px to avoid blurry images.
+   * Height should match the text's line-height for optimal vertical alignment */
+  width: 14px;
+  height: 14px;
+  margin: var(--console-output-vertical-padding) 4px;
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  -moz-context-properties: fill;
+  fill: currentColor;
+}
+
+/* Icon on unindented row should be centered within the left gutter */
+.message[data-indent="0"] + .icon {
+  width: 24px;
+  margin-inline-start: var(--console-icon-horizontal-offset);
+  margin-inline-end: calc(4px - var(--console-icon-horizontal-offset));
+}
+
+.message.command > .icon {
+  color: var(--theme-icon-color);
+  background-image: url(chrome://devtools/skin/images/webconsole/input.svg);
+}
+
+.message.result > .icon {
+  color: var(--theme-icon-dimmed-color);
+  background-image: url(chrome://devtools/skin/images/webconsole/return.svg);
+}
+
+.message:is(.info, .disabled) > .icon {
+  color: var(--theme-icon-color);
+  background-image: url(resource://devtools-shared-images/info-small.svg);
+}
+
+.message.error > .icon {
+  color: var(--theme-icon-error-color);
+  background-image: url(resource://devtools-shared-images/error-small.svg);
+}
+
+.message.warn > .icon {
+  color: var(--theme-icon-warning-color);
+  background-image: url(resource://devtools-shared-images/alert-small.svg);
+}
+
+.message.navigationMarker > .icon {
+  color: var(--console-navigation-color);
+  background-image: url(chrome://devtools/skin/images/webconsole/navigation.svg);
+}
+
+.message > .icon.logpoint {
+  background-image: url(chrome://devtools/content/debugger/images/webconsole-logpoint.svg);
+  -moz-context-properties: fill, stroke;
+  fill: var(--theme-graphs-purple);
+  stroke: var(--theme-graphs-purple);
+}
+
+.message > .icon.logtrace {
+  background-image: url(chrome://devtools/content/debugger/images/trace.svg);
+  -moz-context-properties: fill, stroke;
+  fill: var(--theme-icon-checked-color);
+}
+
+.message.network-message-blocked > .icon {
+  color: var(--theme-icon-error-color);
+  background-image: url(chrome://devtools/skin/images/blocked.svg);
+}
+
+.message > .message-body-wrapper {
+  flex: auto;
+  min-width: 0;
+  margin: var(--console-output-vertical-padding) 0;
+}
+
+.message-body-wrapper .elements-label {
+  color: var(--location-color);
+  margin: calc(var(--console-output-vertical-padding) * 2) 0;
+}
+
+/* The bubble that shows the number of times a message is repeated */
+.message-repeats,
+.warning-group-badge {
+  display: inline-block;
+  flex-shrink: 0;
+  margin: 2px 5px 0 5px;
+  padding: 0 6px;
+  height: 1.25em;
+  border-radius: 40px;
+  font: message-box;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.message-repeats {
+  color: white;
+  background-color: var(--console-repeat-bubble-background);
+}
+
+.warning-group-badge {
+  color: var(--console-warning-background);
+  background-color: var(--console-warning-color);
+}
+
+:root[forced-colors-active] :is(.message-repeats, .warning-group-badge) {
+  color: Canvas;
+  background-color: CanvasText;
+}
+
+.message-location {
+  max-width: 40%;
+  flex-shrink: 0;
+  color: var(--theme-internal-link-color);
+  margin-left: 1ch;
+  /* Makes the file name truncated (and ellipsis shown) on the left side */
+  direction: rtl;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: end;
+}
+
+.message-location:empty {
+  display: none;
+}
+
+.message-location .frame-link-source {
+  font-style: normal !important;
+  /* Enforce LTR direction for the file name - fixes bug 1290056 */
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+.message-location .frame-link-source:visited {
+  color: currentColor;
+}
+
+.message-location .frame-link-source:focus-visible {
+  /*
+   * The link overflow is hidden, which causes the regular outline to not be displayed.
+   * Setting a negative offset displays it "inside" the element so it's visible.
+   */
+  outline-offset: -2px;
+}
+
+.message-flex-body {
+  display: flex;
+}
+
+.message-body {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.message-flex-body > .message-body {
+  display: block;
+  flex: 1;
+}
+
+/* Network styles */
+.webconsole-app .message.network.network-message-blocked .method,
+.webconsole-app
+  .message.network.network-message-blocked
+  .message-flex-body
+  .message-body
+  .url,
+.webconsole-app .message.network.network-message-blocked .status {
+  color: var(--timing-blocked-color);
+}
+
+.webconsole-app .message.network .method {
+  flex: none;
+  margin-inline-end: 1ch;
+}
+
+.webconsole-app .message.network .xhr {
+  background-color: var(--theme-comment);
+  color: white;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 1px 2px;
+  margin-inline-start: 0;
+  margin-inline-end: 1ex;
+}
+
+.webconsole-app .message.network .message-flex-body .message-body .url {
+  color: var(--theme-comment);
+  font-style: inherit;
+}
+
+.webconsole-app .message.network .status {
+  color: var(--theme-highlight-blue);
+  font-style: inherit;
+}
+
+.webconsole-app .message.network .network-monitor .empty-notice {
+  font-size: 16px;
+}
+
+/* For 4XX and 5XX requests, display the text in the "error" color */
+.webconsole-app .message.network.error .message-flex-body .message-body .url,
+.webconsole-app
+  .message.network.error
+  .message-flex-body
+  .message-body
+  .status {
+  color: currentColor;
+}
+
+.network.message .network-info {
+  display: none;
+  margin-block: 6px 2px;
+  border: solid 1px var(--theme-splitter-color);
+}
+
+.network.message.open .network-info {
+  display: block;
+}
+
+:root:dir(rtl) .network.message.open .network-info {
+  direction: rtl;
+}
+
+.network.message .network-info .panels {
+  min-height: 250px;
+}
+/* Response panel needs an absolute height size as the
+ * sizing of its content depends on it, it also needs override
+ * the inline height set on the panels */
+.network.message .network-info #response-panel {
+  height: 250px !important;
+}
+
+.network.message .network-info .accordion-item:last-child .accordion-content {
+  position: static;
+}
+
+.network .message-flex-body > .message-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.message.network > .message-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message.network .url {
+  flex: 1 1 auto;
+  /* Make sure the URL is very small initially, let flex change width as needed. */
+  width: 100px;
+  min-width: 5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.message.network .message-body .status {
+  flex: none;
+  margin-left: 1ch;
+  cursor: default;
+}
+
+.message.network.mixed-content .url {
+  color: var(--theme-highlight-red);
+  cursor: default;
+}
+
+.message .learn-more-link {
+  user-select: none;
+  color: var(--theme-link-color);
+  margin: 0 1ch;
+}
+
+/* Hide the headers panel toolbar buttons in the console */
+.message.network
+  .headers-panel-container
+  :is(#block-button, #edit-resend-button, .devtools-separator) {
+  display: none;
+}
+
+/* Override the `postion:absolute` set on the `.panel-container`, this is only needed in the
+netmonitor to enable the use of top, right, bottom etc to support content scrolling.
+See https://searchfox.org/mozilla-central/rev/7bafa9b9c2156018ec1d410194f9bf4b5b23e77f
+/devtools/client/netmonitor/src/assets/styles/HeadersPanel.css#17-24.
+The webconsole does not need that as the `.webconsole-output` is already scrollable */
+.message.network .headers-panel-container .panel-container {
+  position: static;
+}
+
+/* JSTerm Styles */
+html #webconsole-notificationbox {
+  flex: 0;
+  width: 100%;
+}
+
+.webconsole-output:empty ~ .notificationbox .notification {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+.jsterm-input-container {
+  position: relative;
+  max-width: 100%;
+  background-color: var(--console-input-background);
+  font-family: var(--monospace-font-family);
+  font-size: var(--theme-code-font-size);
+  line-height: var(--console-output-line-height);
+}
+
+/* CodeMirror-powered JsTerm */
+.jsterm-input-container > .CodeMirror {
+  /* aim for a 32px left space (a descendent has 4px padding) */
+  padding-inline-start: calc(var(--console-inline-start-gutter) - 4px);
+  /* Create a new stacking context */
+  position: relative;
+  z-index: 0; /* Keep below column resizers */
+  /* input icon */
+  background-image: url(chrome://devtools/skin/images/webconsole/input.svg);
+  background-position-x: calc(10px + var(--console-icon-horizontal-offset));
+  background-position-y: 4px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  -moz-context-properties: fill;
+  fill: var(--theme-icon-dimmed-color);
+}
+
+/* We don't want to change the color in High Contrast Mode. A proper focus indicator
+   should be added on the input */
+:root:not([forced-colors-active])
+  .jsterm-input-container
+  > .CodeMirror-focused {
+  fill: var(--theme-icon-checked-color);
+}
+
+.jsterm-input-container .CodeMirror-lines {
+  padding-block: var(--console-output-vertical-padding);
+}
+
+.webconsole-app .cm-auto-complete-shadow-text::after {
+  content: attr(data-completion);
+  color: var(--theme-comment);
+  /* This is important for the completion text not to move while the user is typing */
+  /* See Bugs 1491776 & 1558248 */
+  position: absolute;
+}
+
+.jsterm-input-container .CodeMirror-hscrollbar {
+  /* We never want to see the horizontal scrollbar */
+  display: none !important;
+}
+
+.stacktrace {
+  display: none;
+  overflow-y: auto;
+  margin-block-start: 5px;
+  margin-block-end: var(--attachment-margin-block-end);
+  padding-inline-start: 16px;
+}
+
+.message.open .stacktrace:not(:empty) {
+  display: block;
+}
+
+.objectBox-stackTrace .frames {
+  padding-inline-start: 16px;
+}
+
+.cm-s-mozilla a[class] {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+a.learn-more-link.webconsole-learn-more-link {
+  font-style: normal;
+}
+
+/*
+  This element contains the different toolbars in the console
+    - primary, containing the clear messages button and the text search input, and a
+      checkbox (Persist logs or Show Content Messages).
+      It can expand as much as it needs.
+    - close button, close the split console panel. This button will always be displayed on
+      righ-top of the toolbar.
+    - secondary, containing the filter buttons (Error, Warning, …). It's placed inside the
+      primary toolbar if there's enought space.
+
+  We have 2 different layout:
+
+  Narrow:
+
+  --------------------------------------------------------------
+  | 🗑 - Filter Input                                      | ✕ |
+  --------------------------------------------------------------
+  | Error - Warning - Log - Info - Debug - CSS - Network - XHR |
+  --------------------------------------------------------------
+
+  And wide:
+
+  --------------------------------------------------------------------------------------
+  | 🗑 - Filter Input | Error - Warning - Log - Info - Debug - CSS - Network - XHR | ✕ |
+  --------------------------------------------------------------------------------------
+*/
+.webconsole-filteringbar-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  --primary-toolbar-height: 29px;
+}
+
+.webconsole-filteringbar-wrapper .devtools-toolbar {
+  background-color: var(--theme-body-background);
+}
+
+.webconsole-filterbar-primary {
+  display: flex;
+  /* We want the toolbar (which contain the text search input) to fit
+  the content, we don't allow to shrink/overlap it */
+  flex: 100 0 -moz-fit-content;
+  align-items: center;
+  min-height: var(--primary-toolbar-height);
+}
+
+.devtools-toolbar.webconsole-filterbar-secondary {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  user-select: none;
+  grid-column: 1 / -1;
+  min-height: var(--primary-toolbar-height);
+}
+
+.devtools-toolbar.webconsole-filterbar-secondary .devtools-separator {
+  margin-inline: 5px;
+}
+
+.webconsole-filterbar-primary .devtools-togglebutton {
+  font-variant-numeric: tabular-nums;
+}
+
+.split-console-close-button-wrapper {
+  min-height: var(--primary-toolbar-height);
+  /* We will need to display the close button in the right-top always. */
+  grid-column: -1 / -2;
+  grid-row: 1 / 2;
+  padding-inline-end: 0;
+}
+
+/* On OSX the cursor turns into a window-resizing cursor at the edges of the
+ * window, so bring the end of the close button in. */
+:root[platform="mac"] .split-console-close-button-wrapper,
+:root[platform="mac"] .webconsole-sidebar-toolbar {
+  padding-inline-end: 2px;
+}
+
+#split-console-close-button {
+  height: 100%;
+  margin: 0;
+}
+
+#split-console-close-button::before {
+  background-image: url(chrome://devtools/skin/images/close.svg);
+}
+
+.webconsole-filterbar-primary .devtools-searchbox {
+  align-self: stretch;
+  /* Prevent the filter height from devtools-searchbox */
+  height: unset;
+  flex: 1 1 100%;
+  margin-inline-start: 1px;
+  /* It's important to keep this in px as it's used in JS to control the display mode
+   * of the filter toolbar. */
+  min-width: 150px;
+
+  /* High Contrast Mode */
+  :root[forced-colors-active] & {
+    /* Don't stretch so there is room around the input to show the borders
+       and the focus indicator */
+    align-self: unset;
+    outline-offset: 0;
+  }
+}
+
+/* We always render the "X hidden" element in the filter bar for accessibility.
+   But when the filter input is not focused, or empty, and there is no filtered messages,
+   we don't want to display it as it provides little value
+*/
+.webconsole-filterbar-primary[data-has-filtered-by-text="false"]
+  .devtools-searchbox
+  input:is(:not(:focus), :empty)
+  ~ #devtools-console-output-filter-summary {
+  display: none;
+}
+
+/* Special casing String reps, and warning/error string colors
+ * so they are legible */
+.message .message-body > .objectBox-string,
+.message.error .objectBox-string,
+.message.warn .objectBox-string {
+  color: inherit;
+}
+
+/* Special casing dark-theme error and warning ObjectInspector colors */
+.theme-dark .message.error .tree.object-inspector .object-label,
+.theme-dark .message.error .tree.object-inspector .object-label *,
+.theme-dark .message.warn .tree.object-inspector .object-label,
+.theme-dark .message.warn .tree.object-inspector .object-label *,
+.theme-dark .message.error .objectLeftBrace,
+.theme-dark .message.error .objectRightBrace,
+.theme-dark .message.error .arrayLeftBracket,
+.theme-dark .message.error .arrayRightBracket,
+.theme-dark .message.warn .objectLeftBrace,
+.theme-dark .message.warn .objectRightBrace,
+.theme-dark .message.warn .arrayLeftBracket,
+.theme-dark .message.warn .arrayRightBracket {
+  color: var(--theme-body-color);
+}
+.theme-dark .message.error .tree.object-inspector,
+.theme-dark .message.warn .tree.object-inspector {
+  --console-indent-border-color: var(--theme-body-color);
+}
+
+.webconsole-app .message-flex-body > .message-body {
+  overflow: hidden;
+}
+
+.webconsole-app .message-body > * {
+  flex-shrink: 0;
+  vertical-align: top;
+}
+
+.message.startGroup .message-body > .objectBox-string,
+.message.startGroupCollapsed .message-body > .objectBox-string {
+  color: var(--theme-body-color);
+  font-weight: bold;
+}
+
+/* Prefix text that can be set by ConsoleAPI option */
+.webconsole-app .console-message-prefix {
+  color: var(--theme-comment);
+}
+
+/* Styles for JavaScript Tracer messages */
+.webconsole-app
+  :is(.jstracer-dom-event, .jstracer-dom-mutation, .jstracer-implementation) {
+  padding-inline: 4px;
+  margin-inline: 2px;
+}
+.webconsole-app .jstracer-dom-event {
+  background-color: var(--console-tracer-dom-background);
+  color: var(--console-tracer-dom-color);
+}
+.webconsole-app .jstracer-dom-mutation {
+  background-color: var(--console-tracer-dom-background);
+  color: var(--console-tracer-dom-color);
+  margin-inline-end: 4px;
+}
+.webconsole-app .jstracer-implementation {
+  background-color: var(--theme-toolbarbutton-checked-hover-background);
+  color: var(--theme-toolbarbutton-checked-hover-color);
+}
+.webconsole-app .jstracer-display-name {
+  color: var(--theme-highlight-blue);
+  margin-inline: 2px;
+}
+
+.webconsole-app .jstracer-io {
+  color: var(--theme-comment);
+}
+
+.webconsole-app .jstracer-exit-frame-reason {
+  color: var(--theme-highlight-red);
+}
+
+/* console.table() */
+.message .consoletable-wrapper {
+  --consoletable-border: var(--theme-splitter-color);
+
+  max-height: 250px;
+  overflow: auto;
+  position: relative;
+  padding: 0;
+  margin-block-end: var(--attachment-margin-block-end);
+  border: 1px solid var(--consoletable-border);
+}
+
+.message .consoletable {
+  width: 100%;
+  margin: 0;
+  color: var(--theme-body-color);
+  border-spacing: 0;
+}
+
+.consoletable :is(th, td) {
+  border: 0 solid var(--consoletable-border);
+  text-overflow: ellipsis;
+}
+
+.consoletable :is(th, td) + :is(th, td) {
+  border-inline-start-width: 1px;
+}
+
+.consoletable th {
+  position: sticky;
+  top: 0;
+  background-color: var(--theme-toolbar-background);
+  color: var(--theme-body-color);
+  border-block-end-width: 1px;
+  margin: 0;
+  padding: 5px 4px;
+  font-weight: inherit;
+}
+
+.consoletable td {
+  background-color: var(--theme-body-background);
+  color: var(--theme-body-color);
+  padding: 3px 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.consoletable tr:nth-child(even) td {
+  background-color: var(--table-zebra-background);
+}
+
+/* Simple Table */
+.message .simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  --simpletable-border: var(--theme-splitter-color);
+  margin-block-end: var(--attachment-margin-block-end);
+  color: var(--theme-body-color);
+  text-align: left;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid var(--simpletable-border);
+  table-layout: fixed;
+  margin-top: 3px;
+}
+
+.simple-table-header {
+  background-color: var(--theme-toolbar-background);
+  text-overflow: ellipsis;
+  border-bottom: 1px solid var(--simpletable-border);
+}
+
+.simple-table-header > th {
+  padding: 5px 4px;
+  font-weight: inherit;
+}
+
+.simple-table-header > th:nth-child(odd) {
+  width: 10%;
+}
+
+.simple-table td {
+  padding: 3px 4px;
+  text-overflow: ellipsis;
+  border-left: 1px solid var(--simpletable-border);
+}
+
+.simple-table td:nth-child(2n) span {
+  color: var(--theme-body-color);
+}
+
+.simple-table tr:nth-child(even) {
+  background-color: var(--table-zebra-background);
+}
+
+/* Object Inspector */
+.webconsole-app .object-inspector.tree {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.webconsole-app .object-inspector.tree .tree-indent {
+  border-inline-start-color: var(--console-indent-border-color);
+}
+
+.webconsole-app .object-inspector.tree .tree-node:hover:not(.focused),
+/* also disable the highlight on the arrow expand */
+.webconsole-app .object-inspector.tree .tree-node:hover:not(.focused) .theme-twisty {
+  background-color: var(--object-inspector-hover-background);
+}
+
+/* In RTL the tree arrows should usually point to the left, but in
+   this context it should point to the right.
+   This overrides the detault rules set on .theme-twisty. */
+.webconsole-app .tree .theme-twisty:dir(rtl):not(.open),
+.webconsole-app .object-inspector .tree-node .theme-twisty:dir(rtl):not(.open) {
+  transform: rotate(-90deg);
+}
+
+/*
+ * Make console.group, exception and XHR message's arrow look the same as the arrow
+ * used in the ObjectInspector (same background-image, width, transition).
+ * Properties were copied from devtools/client/shared/components/reps/reps.css.
+ */
+.collapse-button {
+  flex: none;
+  align-self: flex-start;
+  margin-block-start: calc(var(--console-output-vertical-padding) - 1px);
+  margin-inline-start: -4px;
+  padding: 3px;
+  border: none;
+  color: var(--theme-icon-dimmed-color);
+  background: transparent;
+}
+
+.collapse-button::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("chrome://devtools/skin/images/arrow.svg") no-repeat center;
+  background-size: 10px;
+  transform: rotate(-90deg);
+  transition: transform 125ms ease;
+  -moz-context-properties: fill;
+  fill: currentColor;
+}
+
+/* Align console.group messages with the border they create for their "children" messages */
+.indent ~ .collapse-button {
+  margin-inline-start: 3px;
+}
+
+.collapse-button[aria-expanded="true"]::before {
+  transform: rotate(0);
+}
+
+.collapse-button::-moz-focus-inner {
+  border: none;
+}
+
+/* Hide the icon, so that we can use the collapse-button in its place */
+.message.network:not(:where(.network-message-blocked, .disabled)) > .icon,
+.message.startGroup > .icon,
+.message.startGroupCollapsed > .icon {
+  display: none;
+}
+
+/* Center the collapse button in the left gutter (first-level only) */
+.message.network > .collapse-button,
+.message:is(.startGroup, .startGroupCollapsed)[data-indent="0"]
+  > .collapse-button {
+  width: 24px;
+  margin-inline-start: var(--console-icon-horizontal-offset);
+  margin-inline-end: calc(4px - var(--console-icon-horizontal-offset));
+}
+
+/* Use a bigger arrow that is visually similar to other icons (10px) */
+.message.network > .collapse-button::before,
+.message:is(.startGroup, .startGroupCollapsed)[data-indent="0"]
+  > .collapse-button::before {
+  width: 100%;
+  background-image: url("chrome://devtools/skin/images/arrow-big.svg");
+  fill: var(--theme-icon-dimmed-color);
+}
+
+/** Utils **/
+.clipboard-only {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+}
+
+.lazy-message-list-top,
+.lazy-message-list-bottom {
+  overflow-anchor: none;
+  pointer-events: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* The following properties values are consumed by the client for drawing in canvas
+ * (for the Netmonitor waterfall ticks, the Font preview, …).
+ * Since they're defined in :root with light-dark(), we need to register them so we'll get
+ * the actual final (rgb) color, and not the declaration with subtituted variables
+ */
+@property --theme-highlight-blue {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+
+@property --theme-highlight-red {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+
+@property --theme-body-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: transparent;
+}
+
+:root {
+  /* Text sizes */
+  --theme-body-font-size: 11px;
+  --theme-code-font-size: 11px;
+  --theme-code-line-height: calc(15 / 11);
+
+  /* Toolbar size (excluding borders) */
+  --theme-toolbar-height: 24px;
+  --theme-toolbar-tall-height: 28px;
+
+  /* For accessibility purposes we want to enhance the focus styling. This
+   * should improve keyboard navigation usability. */
+  --theme-focus-outline-color: var(--blue-50);
+  --theme-focus-textinput-outline-color: var(--theme-focus-outline-color);
+  --theme-focus-outline-size: 2px;
+  --theme-focus-outline: var(--theme-focus-outline-size) solid
+    var(--theme-focus-outline-color);
+  --theme-outline-offset: 0px;
+  /**
+   * we want the box shadow to be 2px bigger than the offset so we have a "double border"
+   * (without it impacting the element layout), which should work whatever
+   * the background-color is (e.g. a clickable element in a "selected" blue-background container)
+   **/
+  --theme-outline-box-shadow-size: calc(
+    2px + var(--theme-focus-outline-size) + var(--theme-outline-offset)
+  );
+  --theme-outline-box-shadow: 0 0 0 var(--theme-outline-box-shadow-size)
+    var(--theme-body-background);
+
+  /* Standardizes the height of items in the Watch Expressions and XHR Breakpoints panes */
+  --expression-item-height: 20.5px;
+
+  /* The photon animation curve */
+  --animation-curve: cubic-bezier(0.07, 0.95, 0, 1);
+
+  /* This should be similar to --highlighter-box-content-color from highlighter.css,
+   * with lower opacity than the 0.6 we apply on highlighter so this can be used as
+   * background color without being too bold
+   */
+  --dimmed-highlighter-box-content-color: hsl(197, 71%, 73%, 0.3);
+
+  /*
+   * Photon Colors CSS Variables v3.3.2
+   * - Colors are taken from https://github.com/FirefoxUX/photon-colors/blob/master/photon-colors.css
+   * - We only add Photon color variables that we are actually using; unused
+   *   variables will fail browser/base/content/test/static/browser_parsable_css.js
+   * - We added a few unofficial colors: a few intermediary values (e.g. Blue 45),
+   *   and lighter variants for the dark theme (e.g. Red 20, Red 40).
+   */
+  --magenta-50: #ff1ad9;
+  --magenta-65: #dd00a9;
+  --magenta-70: #b5007f;
+
+  --purple-50: #9400ff;
+  --purple-60: #8000d7;
+  --purple-30: #c069ff;
+
+  --blue-30: #75baff;
+  --blue-40: #45a1ff;
+  --blue-50: #0a84ff;
+  --blue-50-a30: rgba(10, 132, 255, 0.3);
+  --blue-55: #0074e8;
+  --blue-60: #0060df;
+  --blue-70: #003eaa;
+  --blue-80: #002275;
+
+  --teal-60: #00c8d7;
+  --teal-70: #008ea4;
+
+  --green-50: #30e60b;
+  --green-60: #12bc00;
+  --green-70: #058b00;
+
+  --yellow-50: #ffe900;
+  --yellow-60: #d7b600;
+  --yellow-65: #be9b00;
+  --yellow-70: #a47f00;
+  /* interpolated from yellow-70 and yellow-80 */
+  --yellow-75: #8b6801;
+  --yellow-80: #715100;
+
+  --red-05: #ffe6e8;
+  --red-20: #ffb3d2;
+  --red-40: #ff3b6b;
+  --red-40-a90: rgba(255, 59, 107, 0.9);
+  --red-50: #ff0039;
+  --red-60: #d70022;
+  --red-70: #a4000f;
+
+  --grey-10: #f9f9fa;
+  --grey-10-a20: rgba(249, 249, 250, 0.2);
+  --grey-10-a25: rgba(249, 249, 250, 0.25);
+  --grey-10-a30: rgba(249, 249, 250, 0.3);
+  --grey-20: #ededf0;
+  --grey-25: #e0e0e2;
+  --grey-30: #d7d7db;
+  --grey-40: #b1b1b3;
+  --grey-43: #a4a4a4;
+  --grey-45: #939395;
+  --grey-50: #737373;
+  --grey-55: #5c5c5f;
+  --grey-60: #4a4a4f;
+  --grey-70: #38383d;
+  --grey-80: #2a2a2e;
+  --grey-85: #1b1b1d;
+  --grey-90: #0c0c0d;
+  --grey-90-a10: rgba(12, 12, 13, 0.1);
+  --grey-90-a20: rgba(12, 12, 13, 0.2);
+  --grey-90-a30: rgba(12, 12, 13, 0.3);
+
+  --theme-body-background: #0a0e0a;
+  --theme-body-emphasized-background: light-dark(
+    var(--grey-10),
+    var(--grey-70)
+  );
+  --theme-body-alternate-emphasized-background: #0a0e0a;
+  --theme-sidebar-background: 0a0e0a;
+
+  /* Toolbar */
+  --theme-tab-toolbar-background: #0a0e0a;
+  --theme-toolbar-background: #0a0e0a;
+  --theme-toolbar-alternate-background: #0a0e0a;
+  --theme-toolbar-color: light-dark(var(--grey-90), var(--grey-40));
+  --theme-toolbar-selected-color: light-dark(var(--blue-60), white);
+  --theme-toolbar-selected-background: transparent;
+  --theme-toolbar-highlighted-color: light-dark(
+    var(--green-60),
+    var(--green-50)
+  );
+  --theme-toolbar-background-hover: light-dark(
+    rgba(221, 225, 228, 0.66),
+    #232327
+  );
+  --theme-toolbar-background-alt: light-dark(#f5f5f5, var(--grey-85));
+  --theme-toolbar-background-highlighted: light-dark(#b9dcff, var(--blue-60));
+  --theme-toolbar-error-background: light-dark(var(--red-05), var(--red-70));
+  --theme-toolbar-hover: light-dark(var(--grey-20), #232327);
+  --theme-toolbar-hover-color: var(--theme-toolbar-color);
+  --theme-toolbar-alternate-hover: light-dark(var(--grey-20), var(--grey-80));
+  --theme-toolbar-hover-active: light-dark(var(--grey-20), #252526);
+  --theme-toolbar-selected-hover: var(--theme-toolbar-hover);
+  --theme-toolbar-selected-hover-color: var(--theme-toolbar-selected-color);
+  --theme-toolbar-separator: light-dark(var(--grey-90-a10), var(--grey-10-a20));
+  --theme-toolbar-reordering-background: var(--theme-toolbar-hover);
+  --theme-toolbar-reordering-color: var(--theme-toolbar-hover-color);
+
+  /* Toolbar buttons */
+  --toolbarbutton-background: #0a0e0a;
+  --toolbarbutton-hover-background: #0a0e0a;
+  --toolbarbutton-hover-color: #ffb000;
+  --toolbarbutton-checked-background: var(--toolbarbutton-hover-background);
+  --toolbarbutton-checked-color: var(--theme-icon-checked-color);
+
+  /* Buttons */
+  --theme-button-background: light-dark(
+    rgba(12, 12, 13, 0.05),
+    rgba(249, 249, 250, 0.1)
+  );
+  --theme-button-active-background: light-dark(
+    rgba(12, 12, 13, 0.1),
+    rgba(249, 249, 250, 0.15)
+  );
+
+  /* Accordion headers */
+  --theme-accordion-header-background: var(
+    --theme-toolbar-alternate-background
+  );
+  --theme-accordion-header-color: inherit;
+  --theme-accordion-header-hover-background: var(
+    --theme-toolbar-alternate-hover
+  );
+  --theme-accordion-header-hover-color: inherit;
+
+  /* Selection */
+  --theme-selection-background: light-dark(var(--blue-55), #204e8a);
+  --theme-selection-background-hover: light-dark(#f0f9fe, #353b48);
+  --theme-selection-focus-background: light-dark(
+    var(--toolbarbutton-hover-background),
+    var(--grey-60)
+  );
+  --theme-selection-color: #ffffff;
+
+  /* Text Selection/Highlight */
+  --theme-text-selection-background: light-dark(rgb(185, 215, 253), #353b48);
+  --theme-text-selection-unfocused-background: light-dark(
+    rgb(210, 210, 210),
+    var(--theme-text-selection-background)
+  );
+
+  /* Border color that splits the toolbars/panels/headers. */
+  --theme-splitter-color: light-dark(var(--grey-25), var(--grey-70));
+  --theme-emphasized-splitter-color: light-dark(var(--grey-30), var(--grey-60));
+  --theme-emphasized-splitter-color-hover: light-dark(
+    var(--grey-40),
+    var(--grey-50)
+  );
+
+  /* Icon colors */
+  --theme-icon-color: light-dark(
+    rgba(12, 12, 13, 0.8),
+    rgba(249, 249, 250, 0.7)
+  );
+  --theme-icon-hover-color: var(--theme-icon-color);
+  --theme-icon-dimmed-color: light-dark(
+    rgba(135, 135, 137, 0.9),
+    rgba(147, 147, 149, 0.9)
+  );
+  --theme-icon-disabled-color: var(--theme-icon-dimmed-color);
+  --theme-icon-checked-color: light-dark(var(--blue-60), var(--blue-30));
+  --theme-icon-error-color: light-dark(var(--red-60), var(--red-40));
+  --theme-icon-warning-color: light-dark(var(--yellow-65), var(--yellow-60));
+  /* Some buttons changes the icon color to blue on hover */
+  --theme-icon-alternate-hover-color: var(--theme-icon-checked-color);
+
+  /* Text color */
+  --theme-comment: light-dark(var(--grey-55), var(--grey-45));
+  --theme-body-color: light-dark(var(--grey-70), var(--grey-40));
+  --theme-link-color: light-dark(var(--blue-60), #75bfff);
+  --theme-internal-link-color: light-dark(var(--blue-70), var(--blue-40));
+  --theme-text-color-alt: light-dark(var(--grey-50), var(--grey-45));
+  --theme-text-color-inactive: light-dark(var(--grey-50), var(--grey-45));
+  --theme-text-color-error: light-dark(var(--red-60), var(--grey-10));
+  --theme-text-color-strong: light-dark(var(--grey-90), var(--grey-30));
+  --theme-stack-trace-text: light-dark(var(--red-70), var(--red-20));
+
+  --theme-highlight-green: light-dark(var(--green-70), #86de74);
+  --theme-highlight-blue: light-dark(var(--blue-55), #75bfff);
+  --theme-highlight-purple: light-dark(var(--blue-70), #b98eff);
+  --theme-highlight-red: light-dark(var(--magenta-65), #ff7de9);
+  --theme-highlight-yellow: #fff89e;
+
+  /* These theme-highlight color variables have not been photonized. */
+  --theme-highlight-bluegrey: light-dark(#0072ab, #5e88b0);
+  --theme-highlight-lightorange: light-dark(#d97e00, #d99b28);
+  --theme-highlight-orange: light-dark(#f13c00, #d96629);
+  --theme-highlight-pink: light-dark(#b82ee5, #df80ff);
+  --theme-highlight-gray: light-dark(#dde1e4, #e9f4fe);
+
+  /* Colors that were used in Graphs in the old performance tools, which was removed.
+   * They're also used on other panels and should be renamed (See Bug 1767617) */
+  --theme-graphs-purple: light-dark(#b693eb, #df80ff);
+  --theme-graphs-yellow: light-dark(#efc052, #d99b28);
+  --theme-graphs-orange: light-dark(#d97e00, #d96629);
+  --theme-graphs-grey: light-dark(#cccccc, #757873);
+  --theme-graphs-full-red: #f00;
+
+  /* Common popup styles(used by HTMLTooltip and autocomplete) */
+  --theme-popup-background: light-dark(Field, var(--grey-60));
+  --theme-popup-color: light-dark(FieldText, rgb(249, 249, 250));
+  --theme-popup-border-color: light-dark(ThreeDShadow, #27272b);
+  --theme-popup-dimmed: light-dark(
+    hsla(0, 0%, 80%, 0.3),
+    rgba(249, 249, 250, 0.1)
+  );
+  --theme-popup-hover-background: var(--theme-popup-dimmed);
+  --theme-popup-hover-color: var(--theme-popup-color);
+
+  /* Styling for devtool buttons */
+  --theme-toolbarbutton-background: none;
+  --theme-toolbarbutton-color: light-dark(var(--grey-70), var(--grey-40));
+  --theme-toolbarbutton-hover-background: color-mix(
+    in srgb,
+    currentColor 14%,
+    transparent
+  );
+  --theme-toolbarbutton-hover-color: var(--theme-toolbarbutton-color);
+  --theme-toolbarbutton-checked-background: color-mix(
+    in srgb,
+    var(--theme-toolbarbutton-checked-color) 5%,
+    transparent
+  );
+  --theme-toolbarbutton-checked-color: light-dark(
+    var(--blue-60),
+    var(--blue-30)
+  );
+  --theme-toolbarbutton-checked-hover-background: var(
+    --theme-toolbarbutton-hover-background
+  );
+  --theme-toolbarbutton-checked-hover-color: var(--theme-toolbarbutton-color);
+  --theme-toolbarbutton-active-background: color-mix(
+    in srgb,
+    var(--theme-toolbarbutton-checked-color) 20%,
+    transparent
+  );
+
+  /* Used for select elements */
+  /* Note: we don't use the pair of system properties Field/FieldText here (like
+   * above), because this lightgrey background makes it possible to remove the
+   * border, which is more stylish. The downsides is that we don't adjust with
+   * the OS' dark mode setting. Hopefully this trade-off is OK.
+   */
+  --theme-select-background: light-dark(var(--grey-20), var(--grey-60));
+  --theme-select-color: light-dark(#0c0c0d, #fff);
+  --theme-select-hover-border-color: light-dark(var(--grey-30), var(--grey-50));
+
+  /* Warning colors */
+  --theme-warning-background: light-dark(hsl(54, 100%, 92%), hsl(42, 37%, 19%));
+  --theme-warning-border: light-dark(
+    /* Yellow 60 + opacity */ rgba(215, 182, 0, 0.28),
+    hsl(60, 30%, 26%)
+  );
+  --theme-warning-color: light-dark(var(--yellow-80), hsl(43, 94%, 81%));
+
+  /* Flashing colors used to highlight updates */
+  --theme-contrast-background: light-dark(
+    /* = Yellow 50-a40 on white */ #fff699,
+    /* = Yellow 50-a20 on body background */ #4f4b1f
+  );
+  --theme-contrast-background-alpha: light-dark(
+    /* Yellow 50-a40 */ rgba(255, 233, 0, 0.4),
+    /* Yellow 50-a15 */ rgba(255, 233, 0, 0.15)
+  );
+  --theme-contrast-color: light-dark(black, white);
+  /* This is used for search/filter results underline and need to have a 3:1 contrast against the background */
+  --theme-contrast-border: light-dark(var(--yellow-70), var(--yellow-65));
+
+  --theme-search-results-background: var(--theme-contrast-background);
+  --theme-search-results-color: var(--theme-contrast-color);
+  --theme-search-results-border-color: var(--theme-contrast-border);
+
+  &[forced-colors-active] {
+    /* Color picked from HCM palette created by a11y team */
+    --theme-highlight-blue: light-dark(#0060df, #00ddff);
+    --theme-highlight-red: light-dark(#c50042, #ff9aa2);
+    --theme-highlight-green: light-dark(#005e5e, #3fe1b0);
+    --theme-highlight-purple: #952bb9;
+    --theme-highlight-purple-text: #f7e2ff;
+    --theme-highlight-yellow: light-dark(#ffffcc, #ffea80);
+    --theme-highlight-orange: light-dark(#cc3d00, #ffb587);
+    --theme-highlight-pink: light-dark(#ff9aa2, #ffdfe7);
+    --theme-highlight-gray: light-dark(#5b5b66, #f0f0f4);
+
+    --theme-body-background: Canvas;
+
+    /* Toolbar */
+    --theme-toolbar-background: ButtonFace;
+    --theme-toolbar-selected-color: SelectedItemText;
+    --theme-toolbar-selected-background: SelectedItem;
+    --theme-toolbar-hover: SelectedItemText;
+    --theme-toolbar-hover-color: SelectedItem;
+    --theme-toolbar-hover-active: var(--theme-toolbar-hover);
+    --theme-toolbar-selected-hover: var(--theme-toolbar-selected-background);
+    --theme-toolbar-selected-hover-color: var(--theme-toolbar-selected-color);
+    --theme-toolbar-reordering-background: var(
+      --theme-toolbar-selected-background
+    );
+    --theme-toolbar-reordering-color: var(--theme-toolbar-selected-color);
+
+    /* Accordion headers */
+    --theme-accordion-header-background: ButtonFace;
+    --theme-accordion-header-color: ButtonText;
+    --theme-accordion-header-hover-background: ButtonFace;
+    --theme-accordion-header-hover-color: SelectedItem;
+
+    /* Toolbar buttons */
+    --toolbarbutton-background: ButtonFace;
+    --toolbarbutton-hover-background: SelectedItemText;
+    --toolbarbutton-hover-color: SelectedItem;
+    --toolbarbutton-checked-background: SelectedItem;
+    --toolbarbutton-checked-color: SelectedItemText;
+
+    /* Styling for devtool buttons */
+    --theme-toolbarbutton-background: ButtonFace;
+    --theme-toolbarbutton-color: ButtonText;
+    --theme-toolbarbutton-hover-background: SelectedItemText;
+    --theme-toolbarbutton-hover-color: SelectedItem;
+    --theme-toolbarbutton-checked-background: SelectedItem;
+    --theme-toolbarbutton-checked-color: SelectedItemText;
+    --theme-toolbarbutton-checked-hover-background: var(
+      --theme-toolbarbutton-checked-background
+    );
+    --theme-toolbarbutton-checked-hover-color: var(
+      --theme-toolbarbutton-checked-color
+    );
+
+    /* Common popup styles(used by HTMLTooltip and autocomplete) */
+    --theme-popup-background: Canvas;
+    --theme-popup-color: CanvasText;
+    --theme-popup-border-color: CanvasText;
+
+    /* Text color */
+    --theme-selection-background: SelectedItem;
+    --theme-selection-color: SelectedItemText;
+    --theme-text-color-alt: CanvasText;
+    --theme-text-color-strong: CanvasText;
+    --theme-text-color-inactive: GrayText;
+    --theme-text-selection-background: Highlight;
+    --theme-text-selection-color: HighlightText;
+    --theme-text-selection-unfocused-background: Highlight;
+    --theme-body-color: CanvasText;
+    --theme-link-color: LinkText;
+    --theme-internal-link-color: LinkText;
+
+    --theme-focus-outline-color: CanvasText;
+    --theme-focus-textinput-outline-color: SelectedItem;
+    --theme-icon-color: ButtonText;
+    --theme-icon-hover-color: SelectedItem;
+    /* We don't want dimmed colors in high Contrast Mode, use the same colors as non-dimmed icons */
+    --theme-icon-dimmed-color: var(--theme-icon-color);
+    --theme-icon-disabled-color: GrayText;
+    --theme-icon-error-color: ButtonText;
+    --theme-icon-warning-color: ButtonText;
+    --theme-icon-checked-color: SelectedItemText;
+    --theme-icon-alternate-hover-color: SelectedItem;
+
+    --theme-search-results-background: Mark;
+    --theme-search-results-color: MarkText;
+    --theme-search-results-border-color: MarkText;
+
+    /* Menu/Autocomplete items */
+    --theme-popup-hover-background: SelectedItem;
+    --theme-popup-hover-color: SelectedItemText;
+
+    --theme-splitter-color: CanvasText;
+    --theme-emphasized-splitter-color: CanvasText;
+    --theme-emphasized-splitter-color-hover: SelectedItem;
+
+    /* Flashing colors used to highlight updates */
+    --theme-contrast-background: Mark;
+    --theme-contrast-background-alpha: var(--theme-contrast-background);
+    --theme-contrast-color: MarkText;
+  }
+}
+

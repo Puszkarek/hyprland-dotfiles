@@ -1,0 +1,17 @@
+## Colours
+set $primary_color #33ff00
+set $primary_disabled_color #bbffac
+set $secondary_color #bbffac
+
+set $primary_background #0a0e0a
+set $secondary_background #121a12
+
+set $red #ff2e6e
+
+## Window Colours
+client.focused $primary_color  $primary_color  $primary_color  $primary_color  $primary_color
+client.focused_inactive $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color
+client.unfocused $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color
+client.urgent $red  $red  $red  $red  $red
+client.placeholder $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color
+client.background $primary_background

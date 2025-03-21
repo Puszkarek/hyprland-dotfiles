@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box !important;
+  border-radius: 0 !important;
+  color: #33ff00 !important;
+  border-color: #33ff00 !important;
+  outline-color: #33ff00 !important;
+  background-color: #0a0e0a !important;
+  box-shadow: none !important;
+}
+
+a,
+button {
+  padding: 2px;
+}
+
+*:hover {
+  color: #ffb000 !important;
+  border-color: #ffb000 !important;
+  outline-color: #ffb000 !important;
+  background-color: #0a0e0a !important;
+}
+
+[data-test="explicit-badge"] {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+[data-test="explicit-badge"] {
+  position: relative;
+  box-sizing: border-box;
+}
+[data-test="explicit-badge"]::before {
+  content: "E";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 16px;
+  height: 16px;
+
+  background: #0a0e0a;
+  outline: 1px solid #33ff00;
+  color: #33ff00;
+  border-radius: 0;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::placeholder,
+::-ms-input-placeholder,
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbffac;
+  opacity: 1;
+}
+
+#nowPlaying {
+  background-image: none;
+  background: var(--wave-color-solid-base-fill) !important;
+}
+
+._progressBarWrapper_f1fad6d {
+  color: #33ff00 !important;
+  background-color: #bbffac !important;
+}
+
+.enable-scrollbar-styles ::-webkit-scrollbar-thumb {
+  background: #33ff00;
+  outline: 1px solid #0a0e0a;
+  border-radius: 0px;
+}
+
+.enable-scrollbar-styles ::-webkit-scrollbar-corner,
+.enable-scrollbar-styles ::-webkit-scrollbar-track {
+  background: #0a0e0a;
+}
+
+#footerPlayer {
+  border-top: 1px solid #33ff00;
+}
