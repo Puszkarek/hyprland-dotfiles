@@ -79,4 +79,6 @@
 - [ ] Add icons theme
 - [ ] Add fonts
 - [ ] Add vscode theme
+- [ ] Add gnome theme
+- [ ] Add cursor theme
 - [ ] Create script to automate the install
