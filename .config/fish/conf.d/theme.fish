@@ -1,30 +1,30 @@
 # Catppuccin color palette
 
 # --> special
-set -l foreground 33ff00
-set -l selection ffb000
+set -l foreground 0a0e0a
+set -l selection 0f630c
 
 # --> palette
 set -l teal 33ff00
 set -l flamingo 33ff00
 set -l mauve 33ff00
-set -l pink 33ff00
-set -l red 33ff00
-set -l peach 33ff00
+set -l pink ff00ff
+set -l red ff2e6e
+set -l peach ffb000
 set -l green 33ff00
 set -l yellow 33ff00
-set -l blue 33ff00
+set -l blue 00e1ff
 set -l gray bbffac
 set -l completion ffb000
 
 # Syntax Highlighting
 set -g fish_color_normal $foreground
 set -g fish_color_command $blue
-set -g fish_color_param $flamingo
+set -g fish_color_param $green
 set -g fish_color_keyword $red
-set -g fish_color_quote $green
-set -g fish_color_redirection $pink
-set -g fish_color_end $peach
+set -g fish_color_quote $peach
+set -g fish_color_redirection $green
+set -g fish_color_end $green
 set -g fish_color_error $red
 set -g fish_color_gray $gray
 set -g fish_color_selection --background=$selection
