@@ -3,11 +3,8 @@
  <b style="font-size:24px;line-height:24px;vertical-align:middle; color: #33ff00;"><i>Retro Terminal - sway-dotfiles</i></b>
 </h2>
 
-
-
 ## Screenshots
 
-TODO
 
 ## Info
 
@@ -70,15 +67,16 @@ TODO
    ```
 
 ### Theming
-- `swaymsg gaps inner all set 10`
-
-TODO: create steps description:
-- Download fonts
-- Download vscode theme
-- Move zen browser theme
-
-TODO: Create script to automate the install
 
 ### References
 
 ### Inspiration
+
+
+### TODOs
+- [ ] Add screenshots
+- [ ] Add swaybar config
+- [ ] Add icons theme
+- [ ] Add fonts
+- [ ] Add vscode theme
+- [ ] Create script to automate the install
