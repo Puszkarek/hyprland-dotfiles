@@ -161,6 +161,7 @@
   --theme-search-results-color: var(--theme-contrast-color);
   --theme-search-results-border-color: var(--theme-contrast-border);
   --text-color-disabled: #bbffac !important;
+  --toolbar-bgcolor: #0a0e0a !important;
 }
 
 :root {
@@ -304,7 +305,7 @@
 }
 
 html#main-window {
-  --toolbar-color: var(--primary-color);
+  --toolbar-color: var(--primary-color) !important;
   --input-color: rgb(251, 251, 254);
   --urlbarView-separator-color: rgb(82, 82, 94);
   --arrowpanel-dimmed-further: color-mix(in srgb, currentColor 14%, transparent);
@@ -318,7 +319,6 @@ html#main-window {
   --arrowpanel-border-color: rgb(82, 82, 94);
   --toolbar-field-background-color: rgba(0, 0, 0, 0.30000001192092896);
   --toolbar-bgcolor: rgb(43, 42, 51);
-  --toolbar-color: rgb(251, 251, 254);
   --toolbar-field-color: rgb(251, 251, 254);
   --toolbar-field-border-color: rgba(0, 0, 0, 0);
   --toolbar-field-focus-background-color: rgba(66, 65, 77, 1);
@@ -343,6 +343,15 @@ html#main-window {
   --zen-element-separation: 8px;
   --zen-grainy-background-opacity: 0;
   --zen-main-browser-background-toolbar: var(--zen-themed-toolbar-bg);
+  --chrome-content-separator-color: #33ff00 !important;
+  --input-border-color: #33ff00 !important;
+  --toolbar-field-color: #bbffac !important;
+  --toolbar-field-background-color: #0a0e0a !important;
+  --input-bgcolor: #0a0e0a !important;
+  --input-color: #bbffac !important;
+  --toolbar-field-focus-background-color: #121a12 !important;
+  --toolbar-field-focus-color: #33ff00 !important;
+  --toolbar-field-focus-border-color: #33ff00 !important;
 }
 
 body {
@@ -775,4 +784,15 @@ menuitem:is([type='checkbox'], [checked='true']) .menu-iconic-icon {
     height: 100%;
     background-color: #0a0e0a;
   }
+}
+
+.findbar-textbox {
+  &[status='notfound'] {
+    background-color: #ff000034;
+    color: #bbffac !important;
+  }
+}
+
+.vertical-pinned-tabs-container-separator {
+  background: #33ff00 !important;
 }
