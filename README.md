@@ -23,7 +23,8 @@ TODO
 |**Shell**|[Fish](https://github.com/fish-shell/fish-shell)|
 |**Shell Framework**|[Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish)|
 |**Icons**|TODO|
-|**Music Player**|TODO: Probably [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) with [mopidy-tidal](https://github.com/tehkillerbee/mopidy-tidal)|
+|**Music Player**|[cmus](https://github.com/cmus/cmus)|
+|**Music Lyric Visualizer**|[cmus-auto-lyrics](https://github.com/mzivic7/cmus-auto-lyrics)|
 |**Font**|[Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)|
 
 ### Dependencies
