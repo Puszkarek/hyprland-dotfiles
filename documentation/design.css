@@ -15,7 +15,10 @@
 
   --yellow: #eeff00;
 
-  --selection-background: #33ff004a;
+  --selection-background: #0f630cd6;
+  --selection-background-inactive: #0f630c9f;
+  --selection-active-background: #ffb00034;
+  --selection-active-background-inactive: #ffae0023;
   --selection-background: #0a7470d6;
   --selection-background-inactive: #0a74708e;
 

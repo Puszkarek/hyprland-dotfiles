@@ -1,0 +1,10 @@
+{
+  "singleQuote": true,
+  "singleAttributePerLine": false,
+  "trailingComma": "es5",
+  "bracketSameLine": true,
+  "embeddedLanguageFormatting": "auto",
+  "proseWrap": "preserve",
+  "quoteProps": "consistent",
+  "printWidth": 2000
+}

@@ -26,6 +26,9 @@ TODO
 |**Music Player**|TODO: Probably [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) with [mopidy-tidal](https://github.com/tehkillerbee/mopidy-tidal)|
 |**Font**|[Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)|
 
+### Dependencies
+- [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+
 
 ## Keybinds 
 |        Keybind         |                 Function                 |
