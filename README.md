@@ -23,6 +23,7 @@
 |**Music Player**|[cmus](https://github.com/cmus/cmus)|
 |**Music Lyric Visualizer**|[cmus-auto-lyrics](https://github.com/mzivic7/cmus-auto-lyrics)|
 |**Font**|[Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)|
+|**Cursor**|[Breeze Hacker](https://github.com/clayrisser/breeze-hacked-cursor-theme)|
 
 ### Dependencies
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
@@ -56,6 +57,10 @@
     sudo pacman -S fish
     curl -L https://get.oh-my.fish | fish
     ```
+1. Install [Waybar](https://github.com/Alexays/Waybar)
+    ```
+    sudo pacman -S waybar
+    ```
 ### Moving Files
 1. Copy `config` folder to `~/.config`
    ```
@@ -65,8 +70,18 @@
    ```
    cp -r zen-browser/* ~/.zen/${PROFILE}/chrome/ 
    ```
+#### Moving icons
+```
+# copy discord (.config/discord)
+sudo cp -r ./.config/discord ~/.config/
+# copy all other icons
+sudo cp -r ./icons/hicolor /usr/share/icons/
+sudo gtk-update-icon-cache -f -t /usr/share/icons/hicolor
+```
 
 ### Theming
+
+
 
 ### References
 

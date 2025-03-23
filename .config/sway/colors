@@ -1,4 +1,4 @@
-## Colours
+## Colors
 set $primary_color #33ff00
 set $primary_disabled_color #bbffac
 set $secondary_color #bbffac
@@ -8,7 +8,7 @@ set $secondary_background #121a12
 
 set $red #ff2e6e
 
-## Window Colours
+## Window Colors
 client.focused $primary_color  $primary_color  $primary_color  $primary_color  $primary_color
 client.focused_inactive $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color
 client.unfocused $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color  $primary_disabled_color
