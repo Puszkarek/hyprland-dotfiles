@@ -25,6 +25,12 @@
 |**Font**|[Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)|
 |**Cursor**|[Breeze Hacker](https://github.com/clayrisser/breeze-hacked-cursor-theme)|
 
+### Dev Info
+| - | :--: |
+|**OS**|[Arch Linux](https://archlinux.org/)|
+|**Database Visualizer**|[harlequin](https://harlequin.sh/)|
+|**Postman Alternative**|[ATAC](https://github.com/Julien-cpsn/ATAC)|
+
 ### Dependencies
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 
