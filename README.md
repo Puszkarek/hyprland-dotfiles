@@ -15,7 +15,7 @@
 |**Bar**|[waybar](https://github.com/Alexays/Waybar)|
 |**Application Launcher**|[Rofi](https://github.com/lbonn/rofi)|
 |**Notification Daemon**|TODO|
-|**File Manager**|[Ranger](https://github.com/ranger/ranger)|
+|**File Manager**|[Ranger](https://github.com/ranger/ranger), [Superfile](https://github.com/yorukot/superfile)|
 |**Terminal Emulator**|[Kitty](https://github.com/kovidgoyal/kitty)|
 |**Shell**|[Fish](https://github.com/fish-shell/fish-shell)|
 |**Shell Framework**|[Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish)|
