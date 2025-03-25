@@ -31,4 +31,12 @@
 
   --secondary-background: #121a12;
   --secondary-hover-background: #1a241a;
+
+  /* For some TUI apps that does not support hex with alpha */
+  --green-background: #0f630c;
+  --orange-background: #49360b;
+  --red-background: #490b0b;
+  --magenta-background: #490b49;
+  --blue-background: #0b2849;
+  --cyan-background: #0b4949;
 }

@@ -1,0 +1,21 @@
+[ui]
+font_color = "#33ff00"
+
+main_foreground_color = "#33ff00"
+secondary_foreground_color = "#33ff00"
+
+main_background_color = "#0a0e0a"
+secondary_background_color = "#0a0e0a"
+
+[others]
+selection_highlight_color = "#ffb000"
+environment_variable_highlight_color = "#00e1ff"
+
+[methods]
+GET = "#0f630c"
+POST = "#49360b"
+PUT = "#0b4949"
+PATCH = "#0b2849"
+DELETE = "#490b0b"
+HEAD = "#0f630c"
+OPTIONS = "#490b49"

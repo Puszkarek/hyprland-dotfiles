@@ -29,6 +29,7 @@
 | - | :--: |
 |**OS**|[Arch Linux](https://archlinux.org/)|
 |**Database Visualizer**|[harlequin](https://harlequin.sh/)|
+|**MongoDB Visualizer**|[Vi Mongo](https://www.vi-mongo.com/)|
 |**Postman Alternative**|[ATAC](https://github.com/Julien-cpsn/ATAC)|
 
 ### Dependencies

@@ -1,0 +1,84 @@
+global:
+  backgroundColor: "#0a0e0a"
+  contrastBackgroundColor: "#0a0e0a"
+  moreContrastBackgroundColor: "#0a0e0a"
+  textColor: "#33ff00"
+  secondaryTextColor: "#33ff00"
+  borderColor: "#33ff00"
+  focusColor: "#ffb000"
+  titleColor: "#33ff00"
+  graphicsColor: "#33ff00"
+welcome:
+  formLabelColor: "#33ff00"
+  formInputColor: "#33ff00"
+  formInputBackgroundColor: "#121a12"
+connection:
+  formLabelColor: "#33ff00"
+  formInputColor: "#33ff00"
+  formInputBackgroundColor: "#121a12"
+  listTextColor: "#33ff00"
+  listSelectedTextColor: "#ffb000"
+  listSelectedBackgroundColor: "#0a0e0a"
+  listSecondaryTextColor: "#0a0e0a"
+  listSecondaryBackgroundColor: "#33ff00"
+header:
+  keyColor: "#33ff00"
+  valueColor: "#0a0e0a"
+  activeSymbol: ●
+  inactiveSymbol: ○
+tabBar:
+  activeTextColor: "#33ff00"
+  activeBackgroundColor: "#0a0e0a"
+databases:
+  nodeTextColor: "#33ff00"
+  leafTextColor: "#33ff00"
+  nodeSymbolColor: "#0a0e0a"
+  leafSymbolColor: "#0a0e0a"
+  openNodeSymbol: " "
+  closedNodeSymbol: " "
+  leafSymbol: "󰈙 "
+content:
+  statusTextColor: "#33ff00"
+  headerRowColor: "#33ff00"
+  columnKeyColor: "#33ff00"
+  columnTypeColor: "#bbffac"
+  cellTextColor: "#33ff00"
+  selectedRowColor: "#ffb000"
+docPeeker:
+  keyColor: "#0a0e0a"
+  valueColor: "#33ff00"
+  bracketColor: "#33ff00"
+  highlightColor: "#3A4963"
+inputBar:
+  labelColor: "#33ff00"
+  inputColor: "#bbffac"
+  autocomplete:
+    backgroundColor: "#121a12"
+    textColor: "#33ff00"
+    activeBackgroundColor: "#0a0e0a"
+    activeTextColor: "#ffb000"
+    secondaryTextColor: "#bbffac"
+history:
+  textColor: "#33ff00"
+  selectedTextColor: "#ffb000"
+  selectedBackgroundColor: "#0a0e0a"
+help:
+  headerColor: "#33ff00"
+  keyColor: "#33ff00"
+  descriptionColor: "#bbffac"
+others:
+  buttonsTextColor: "#33ff00"
+  buttonsBackgroundColor: "#0a0e0a"
+  deleteButtonSelectedBackgroundColor: "#DA3312"
+  modalTextColor: "#33ff00"
+  modalSecondaryTextColor: "#0a0e0a"
+  separatorSymbol: "|"
+  separatorColor: "#334155"
+styleChange:
+  textColor: "#33ff00"
+  selectedTextColor: "#0F172A"
+  selectedBackgroundColor: "#0a0e0a"
+aiPrompt:
+  formLabelColor: "#33ff00"
+  formInputColor: "#33ff00"
+  formInputBackgroundColor: "#121a12"
