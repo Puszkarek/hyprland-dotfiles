@@ -14,11 +14,15 @@ window#waybar {
 
 tooltip {
   background-color: #0a0e0a;
-  border: 1px solid #33ff00;
+  border: 1px solid #ffb000;
+}
+
+tooltip label {
+  color: #ffb000;
 }
 
 #clock,
-#custom-cmus,
+#custom-lyrics,
 #tray,
 #cpu,
 #memory,
@@ -60,6 +64,7 @@ tooltip {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
   color: #33ff00;
+  margin-left: 6px;
 }
 
 #tray {
@@ -70,7 +75,6 @@ tooltip {
 #cpu,
 #memory,
 #network,
-#custom-cmus,
 #temperature {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
@@ -94,4 +98,21 @@ tooltip {
   background-size: calc(100% - 6px) calc(100% - 12px);
   min-width: 30px;
   margin-right: 6px;
+}
+
+#custom-lyrics {
+  margin-left: 6px;
+  color: #33ff00;
+}
+
+#custom-lyrics.no-song,
+#custom-lyrics.no-lyrics {
+  background-color: #0a0e0a;
+  border: 1px solid #ff2e6e;
+  color: #ff2e6e;
+}
+
+#custom-lyrics.song {
+  background-color: #0a0e0a;
+  border: 1px solid #33ff00;
 }

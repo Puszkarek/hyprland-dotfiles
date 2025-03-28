@@ -8,8 +8,8 @@
   "margin-bottom": 0,
   "margin-left": 10,
 
-  "modules-left": ["custom/logo", "sway/workspaces"],
-  "modules-center": ["clock", "custom/cmus"],
+  "modules-left": ["custom/logo", "sway/workspaces","custom/lyrics"],
+  "modules-center": ["clock"],
   "modules-right": ["tray", "cpu", "memory", "temperature", "network"],
 
   "sway/workspaces": {
@@ -23,12 +23,13 @@
   },
   "clock": {
     "format": "{:%I:%M %p - %a, %d %b %Y}",
-    "tooltip": false
-  },
+    "tooltip": true,
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+},
 
   "cpu": {
     "format": "{usage}% CPU",
-    "tooltip-format": "CPU Usage",
+    "tooltip": true,
     "interval": 2,
 
     "states": {
@@ -37,7 +38,7 @@
   },
   "memory": {
     "format": "{percentage}% M",
-    "tooltip-format": "Memory Usage",
+    "tooltip": true,
     "interval": 2,
 
     "states": {
@@ -49,7 +50,7 @@
     "format-ethernet": "{bandwidthDownBits}",
     "format-disconnected": "no network",
     "interval": 5,
-    "tooltip": false
+    "tooltip": true
   },
 
   "temperature": {
@@ -63,13 +64,12 @@
     "exec": "echo '{\"alt\": \"arch\", \"tooltip\": \"Arch Linux\"}'",
     "interval": "once"
   },
-  "custom/cmus": {
+  "custom/lyrics": {
+    "exec": "cmus-waybar-lyrics",
     "format": "{}",
-    "max-length": 40,
-    "interval": 2,
-    "exec": "cmus-remote -C \"format_print '%a - %t'\"",
-    "exec-if": "pgrep -x cmus",
-    "on-click": "cmus-remote -u",
-    "escape": true
-  }
+    "restart-interval": 5,
+    "return-type": "json",
+    "signal": 1,  // SIGRTMIN+1
+    "tooltip": true
+}
 }

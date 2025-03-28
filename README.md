@@ -34,6 +34,7 @@
 
 ### Dependencies
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+- [cmus-waybar-lyrics](https://github.com/Puszkarek/cmus-waybar-lyrics)
 
 
 ## Keybinds 
