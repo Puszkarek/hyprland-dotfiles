@@ -2,7 +2,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: "Share Tech Mono";
+  font-family: 'Share Tech Mono';
   font-weight: 500;
   font-size: 16px;
   padding: 0;
@@ -92,7 +92,7 @@ tooltip label {
 #custom-logo {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
-  background-image: url("icons/arch.svg");
+  background-image: url('icons/arch.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: calc(100% - 6px) calc(100% - 12px);
