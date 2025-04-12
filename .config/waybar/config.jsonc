@@ -65,11 +65,9 @@
     "interval": "once"
   },
   "custom/lyrics": {
-    "exec": "cmus-waybar-lyrics",
+    "exec": "cmus-waybar-lyrics-rs",
     "format": "{} <span font='11' fgalpha='50%' style='italic'>{alt}</span>",
-    "restart-interval": 5,
     "return-type": "json",
-    "signal": 1,  // SIGRTMIN+1
     "tooltip": true
 }
 }

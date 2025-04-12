@@ -105,6 +105,10 @@ tooltip label {
   color: #33ff00;
 }
 
+#custom-lyrics:hover {
+  color: #ffb000;
+}
+
 #custom-lyrics.no-song,
 #custom-lyrics.no-lyrics {
   background-color: #0a0e0a;
@@ -115,4 +119,9 @@ tooltip label {
 #custom-lyrics.song {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
+}
+
+#custom-lyrics .next-line {
+  color: #bbffac;
+  font-style: italic;
 }
