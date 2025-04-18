@@ -28,6 +28,7 @@ tooltip label {
 #memory,
 #battery,
 #network,
+#battery,
 #temperature {
   padding: 6px 12px;
 }
@@ -75,6 +76,7 @@ tooltip label {
 #cpu,
 #memory,
 #network,
+#battery,
 #temperature {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
@@ -82,6 +84,17 @@ tooltip label {
   color: #33ff00;
 }
 
+#battery.charging {
+  border: 1px solid #00e1ff;
+  color: #00e1ff;
+}
+
+#battery.warning {
+  border: 1px solid #ffb000;
+  color: #ffb000;
+}
+
+#battery.critical,
 #cpu.critical,
 #memory.critical {
   background-color: #ff2e6e;
@@ -116,7 +129,7 @@ tooltip label {
   color: #ff2e6e;
 }
 
-#custom-lyrics.song {
+#custom-lyrics.has-song {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
 }
