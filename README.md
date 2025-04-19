@@ -30,6 +30,8 @@
 | - | :--: |
 |**OS**|[Arch Linux](https://archlinux.org/)|
 
+### Themes
+|**Visual Studio Code**|[Wiity Theme](https://marketplace.visualstudio.com/items/?itemName=puszkarek.wiity-vscode-theme)|
 #### TUI Apps
 |**Database Visualizer**|[harlequin](https://harlequin.sh/)|
 |**MongoDB Visualizer**|[Vi Mongo](https://www.vi-mongo.com/)|
