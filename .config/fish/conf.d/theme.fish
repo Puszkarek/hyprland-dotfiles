@@ -12,7 +12,7 @@ set -l pink ff00ff
 set -l red ff2e6e
 set -l peach ffb000
 set -l green 33ff00
-set -l yellow 33ff00
+set -l yellow ffb000
 set -l blue 00e1ff
 set -l gray bbffac
 set -l completion ffb000

@@ -1,0 +1,8 @@
+{
+  "tidal_token": "",
+  "lyrics_folder": "/home/puszkarek/lyrics",
+  "colors": {
+    "default_fg": "green",
+    "focused_fg": "yellow"
+  }
+}

@@ -93,7 +93,7 @@
       "interval": "once"
     },
     "custom/lyrics": {
-      "exec": "cmus-waybar-lyrics-rs",
+      "exec": "waybar-bard",
       "format": "{} <span font='11' fgalpha='50%' style='italic'>{alt}</span>",
       "return-type": "json",
       "tooltip": true

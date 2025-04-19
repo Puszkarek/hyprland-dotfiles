@@ -12,7 +12,7 @@
 | - | :--: |
 |**Lockscreen**|TODO|
 |**Window Manager**|[Sway](https://github.com/swaywm/sway)|
-|**Bar**|[waybar](https://github.com/Alexays/Waybar)|
+|**WayBar**|[waybar](https://github.com/Alexays/Waybar)|
 |**Application Launcher**|[Rofi](https://github.com/lbonn/rofi)|
 |**Notification Daemon**|TODO|
 |**File Manager**|[Ranger](https://github.com/ranger/ranger), [Superfile](https://github.com/yorukot/superfile)|
@@ -21,6 +21,7 @@
 |**Shell Framework**|[Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish)|
 |**Icons**|TODO|
 |**Music Player**|[cmus](https://github.com/cmus/cmus)|
+|**Music Stream**|[Tidal](https://tidal.com/)|
 |**Music Lyric Visualizer**|[cmus-auto-lyrics](https://github.com/mzivic7/cmus-auto-lyrics)|
 |**Font**|[Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)|
 |**Cursor**|[Breeze Hacker](https://github.com/clayrisser/breeze-hacked-cursor-theme)|
@@ -28,13 +29,12 @@
 ### Dev Info
 | - | :--: |
 |**OS**|[Arch Linux](https://archlinux.org/)|
+
+#### TUI Apps
 |**Database Visualizer**|[harlequin](https://harlequin.sh/)|
 |**MongoDB Visualizer**|[Vi Mongo](https://www.vi-mongo.com/)|
 |**Postman Alternative**|[ATAC](https://github.com/Julien-cpsn/ATAC)|
 
-### Dependencies
-- [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
-- [cmus-waybar-lyrics](https://github.com/Puszkarek/cmus-waybar-lyrics)
 
 
 ## Keybinds 
@@ -47,29 +47,30 @@
 
 ## Manual Installation (Arch Linux)
 
-### Installing Dependencies
-1. Install [Rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
+### Dependencies
+- [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+- [bard](https://github.com/Puszkarek/bard)
+- [Rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
+- [Kitty](ttps://github.com/kovidgoyal/kitty)
+- [Fish](https://github.com/oh-my-fish/oh-my-fish)
+
+#### Installing Dependencies
+
+1. Install dependencies
     ```
-    sudo pacman -S rofi
+    sudo pacman -S rofi kitty fish waybar
     ```
-1. Install [Ranger](https://github.com/ranger/ranger?tab=readme-ov-file)
+1. Install utilities
     ```
     sudo pacman -S ranger
     ```
-1. Install [Kitty](ttps://github.com/kovidgoyal/kitty)
+1. Run post-install script
     ```
-    sudo pacman -S kitty
-    ```
-1. Install [Fish](https://github.com/oh-my-fish/oh-my-fish)
-    ```
-    sudo pacman -S fish
     curl -L https://get.oh-my.fish | fish
     ```
-1. Install [Waybar](https://github.com/Alexays/Waybar)
-    ```
-    sudo pacman -S waybar
-    ```
+
 ### Moving Files
+
 1. Copy `config` folder to `~/.config`
    ```
    cp -r config/* ~/.config
@@ -78,17 +79,10 @@
    ```
    cp -r zen-browser/* ~/.zen/${PROFILE}/chrome/ 
    ```
-#### Moving icons
-```
-# copy discord (.config/discord)
-sudo cp -r ./.config/discord ~/.config/
-# copy all other icons
-sudo cp -r ./icons/hicolor /usr/share/icons/
-sudo gtk-update-icon-cache -f -t /usr/share/icons/hicolor
-```
-
-### Theming
-
+1. Copy `icons` folder to `~/.icons`
+   ```
+   cp -r .icons/* ~/.icons
+   ```
 
 
 ### References
@@ -98,10 +92,6 @@ sudo gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 ### TODOs
 - [ ] Add screenshots
-- [ ] Add swaybar config
 - [ ] Add icons theme
-- [ ] Add fonts
-- [ ] Add vscode theme
 - [ ] Add gnome theme
-- [ ] Add cursor theme
 - [ ] Create script to automate the install
