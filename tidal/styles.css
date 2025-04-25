@@ -1,4 +1,5 @@
 * {
+  font-family: 'Share Tech Mono';
   box-sizing: border-box !important;
   border-radius: 0 !important;
   color: #33ff00 !important;
@@ -6,6 +7,8 @@
   outline-color: #33ff00 !important;
   background-color: #0a0e0a !important;
   box-shadow: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
 }
 
 a,
@@ -14,22 +17,24 @@ button {
 }
 
 *:hover {
+  box-shadow: none !important;
   color: #ffb000 !important;
   border-color: #ffb000 !important;
   outline-color: #ffb000 !important;
+  background-image: inherit !important;
   background-color: #0a0e0a !important;
 }
 
-[data-test="explicit-badge"] {
+[data-test='explicit-badge'] {
   margin-right: 3px;
   margin-left: 3px;
 }
-[data-test="explicit-badge"] {
+[data-test='explicit-badge'] {
   position: relative;
   box-sizing: border-box;
 }
-[data-test="explicit-badge"]::before {
-  content: "E";
+[data-test='explicit-badge']::before {
+  content: 'E';
   position: absolute;
   top: 0;
   left: 0;
@@ -84,4 +89,8 @@ button {
 
 #footerPlayer {
   border-top: 1px solid #33ff00;
+}
+
+img {
+  border: 1px solid #33ff00 !important;
 }

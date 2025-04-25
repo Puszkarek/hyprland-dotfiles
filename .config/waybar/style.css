@@ -29,6 +29,7 @@ tooltip label {
 #battery,
 #network,
 #battery,
+#custom-cava,
 #temperature {
   padding: 6px 12px;
 }
@@ -77,6 +78,7 @@ tooltip label {
 #memory,
 #network,
 #battery,
+#custom-cava,
 #temperature {
   background-color: #0a0e0a;
   border: 1px solid #33ff00;
@@ -137,4 +139,8 @@ tooltip label {
 #custom-lyrics .next-line {
   color: #bbffac;
   font-style: italic;
+}
+
+#custom-cava {
+  letter-spacing: 10px;
 }
