@@ -1,16 +1,16 @@
 [
   {
-    "output": "HDMI-A-1",
+    "output": "DP-2",
     "layer": "top",
     "spacing": 0,
     "height": 0,
 
     "margin-top": 1,
-    "margin-right": 10,
+    "margin-right": 5,
     "margin-bottom": 0,
-    "margin-left": 10,
+    "margin-left": 5,
 
-    "modules-left": ["sway/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/cava"],
     "modules-right": ["tray", "battery"],
 
@@ -21,29 +21,27 @@
       "spacing": 10,
       "tooltip": false
     },
-    "sway/workspaces": {
-      "disable-scroll": true,
+    "hyprland/workspaces": {
       "all-outputs": false,
       "tooltip": false
     }
   },
   {
-    "output": "DP-2",
+    "output": "HDMI-A-1",
     "layer": "top",
     "spacing": 0,
     "height": 0,
 
     "margin-top": 1,
-    "margin-right": 10,
+    "margin-right": 5,
     "margin-bottom": 0,
-    "margin-left": 10,
+    "margin-left": 5,
 
-    "modules-left": ["custom/logo", "sway/workspaces", "custom/lyrics"],
+    "modules-left": ["hyprland/workspaces", "custom/lyrics"],
     "modules-center": ["clock"],
     "modules-right": ["cpu", "memory", "temperature", "network"],
 
-    "sway/workspaces": {
-      "disable-scroll": true,
+    "hyprland/workspaces": {
       "all-outputs": false,
       "tooltip": false
     },
@@ -87,14 +85,6 @@
         "critical": 20,
         "warning": 40
       }
-    },
-
-    "custom/logo": {
-      "format": "",
-      "tooltip": false,
-      "return-type": "json",
-      "exec": "echo '{\"alt\": \"arch\", \"tooltip\": \"Arch Linux\"}'",
-      "interval": "once"
     },
     "custom/lyrics": {
       "exec": "waybar-bard",
