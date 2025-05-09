@@ -1,15 +1,15 @@
 [ui]
-font_color = "#33ff00"
+font_color = "#ff3845"
 
-main_foreground_color = "#33ff00"
-secondary_foreground_color = "#33ff00"
+main_foreground_color = "#ff3845"
+secondary_foreground_color = "#ff3845"
 
-main_background_color = "#0a0e0a"
-secondary_background_color = "#0a0e0a"
+main_background_color = "#0e0e17"
+secondary_background_color = "#0e0e17"
 
 [others]
-selection_highlight_color = "#ffb000"
-environment_variable_highlight_color = "#00e1ff"
+selection_highlight_color = "#fb932e"
+environment_variable_highlight_color = "#2570d4"
 
 [methods]
 GET = "#0f630c"

@@ -1014,7 +1014,7 @@ html.theme-light {
   letter-spacing: -0.05ch;
   font-weight: 300;
   --label-font-weight: 500;
-  --accent-color: #33ff00;
+  --accent-color: #ff3845;
 
   --corner-text: "Synth 77";
 
@@ -1032,15 +1032,15 @@ html.theme-light {
   --active: oklch(54% 0 0 / 0.2);
   --selected: var(--active);
 
-  --txt-dark: #33ff00;
-  --txt-link: #33ff00;
-  --txt-0: #33ff00;
-  --txt-1: #33ff00;
-  --txt-2: #33ff00;
-  --txt-3: #33ff00;
+  --txt-dark: #ff3845;
+  --txt-link: #ff3845;
+  --txt-0: #ff3845;
+  --txt-1: #ff3845;
+  --txt-2: #ff3845;
+  --txt-3: #ff3845;
 
-  --acc-0: #00e1ff;
-  --acc-1: #ffb000;
+  --acc-0: #2570d4;
+  --acc-1: #fb932e;
   --acc-2: #ff2e6e;
 
   --border-width: 2px;

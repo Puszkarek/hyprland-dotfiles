@@ -1,5 +1,5 @@
 configuration {
-font: "ShareTechMono 12";
+font: "Orbitron 12";
 display-combi: "search";
 /*	modes: "window,drun,run,ssh";*/
 /*	location: 0;*/

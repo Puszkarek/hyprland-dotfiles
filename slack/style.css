@@ -1,13 +1,13 @@
 :root {
-  --p-team_sidebar__nav-bg: #0a0e0a;
+  --p-team_sidebar__nav-bg: #0e0e17;
   --p-team_sidebar__badge: #1c913d;
-  --p-team_sidebar__badge-text-color: #33ff00;
-  --p-team_sidebar__text-color: #33ff00;
-  --p-team_sidebar__text-color--opacity-30: #33ff004d;
-  --p-team_sidebar__text-color--opacity-10: #33ff001a;
+  --p-team_sidebar__badge-text-color: #ff3845;
+  --p-team_sidebar__text-color: #ff3845;
+  --p-team_sidebar__text-color--opacity-30: #ff38454d;
+  --p-team_sidebar__text-color--opacity-10: #ff38451a;
   --p-team_sidebar__text-color--mix-80: #44b966;
   --p-team_sidebar__text-color--mix-10: #1f312a;
-  --p-team_sidebar__color-focus-ring: 0 0 0 3px #1a1d21, 0 0 0 4px #33ff00, 0 0 0 6px rgba(78, 224, 119, 0.3);
+  --p-team_sidebar__color-focus-ring: 0 0 0 3px #1a1d21, 0 0 0 4px #ff3845, 0 0 0 6px rgba(78, 224, 119, 0.3);
 }
 :root,
 .sk-client-theme--light {
@@ -47,15 +47,15 @@
   --dt_color-plt-important-80: 0, 52, 60;
   --dt_color-plt-important-90: 0, 33, 39;
   --dt_color-plt-important-100: 0, 17, 20;
-  --dt_color-theme-surf-ter: #0a0e0a;
-  --dt_color-theme-surf-ter-hover: #0a0e0a;
-  --dt_color-theme-surf-ter-pressed: #0a0e0a;
-  --dt_color-theme-surf-inv-pry: #0a0e0a;
-  --dt_color-theme-surf-inv-pry-hover: #0a0e0a;
-  --dt_color-theme-surf-inv-pry-pressed: #0a0e0a;
-  --dt_color-theme-surf-inv-sec: #0a0e0a;
-  --dt_color-theme-surf-inv-sec-hover: #0a0e0a;
-  --dt_color-theme-surf-inv-sec-pressed: #0a0e0a;
+  --dt_color-theme-surf-ter: #0e0e17;
+  --dt_color-theme-surf-ter-hover: #0e0e17;
+  --dt_color-theme-surf-ter-pressed: #0e0e17;
+  --dt_color-theme-surf-inv-pry: #0e0e17;
+  --dt_color-theme-surf-inv-pry-hover: #0e0e17;
+  --dt_color-theme-surf-inv-pry-pressed: #0e0e17;
+  --dt_color-theme-surf-inv-sec: #0e0e17;
+  --dt_color-theme-surf-inv-sec-hover: #0e0e17;
+  --dt_color-theme-surf-inv-sec-pressed: #0e0e17;
   --dt_color-theme-surf-inv-ter: #611f6921;
   --dt_color-theme-surf-inv-ter-hover: #39063a38;
   --dt_color-theme-surf-inv-ter-pressed: #39063a47;
@@ -125,7 +125,7 @@
   --dt_color-theme-base-inv-imp-pressed: rgba(var(--dt_color-plt-important-100), 0.22);
   --dt_color-theme-content-inv-imp: rgba(var(--dt_color-plt-important-0), 1);
   --dt_color-theme-content-inv-imp-sec: rgba(var(--dt_color-plt-important-80), 1);
-  --dt_color-theme-base-imp: #00e1ff;
+  --dt_color-theme-base-imp: #2570d4;
   --dt_color-theme-base-imp-hover: rgba(var(--dt_color-plt-important-70), 0.13);
   --dt_color-theme-base-imp-pressed: rgba(var(--dt_color-plt-important-70), 0.22);
   --dt_color-theme-content-imp: rgba(var(--dt_color-plt-important-100), 1);
@@ -139,10 +139,10 @@
 :root {
   --rc-drag-handle-size: 12px;
   --rc-drag-handle-mobile-size: 24px;
-  --rc-drag-handle-bg-colour: #121a12;
+  --rc-drag-handle-bg-colour: #030305;
   --rc-drag-bar-size: 6px;
-  --rc-border-color: #0a0e0a;
-  --rc-focus-color: #ffb000;
+  --rc-border-color: #0e0e17;
+  --rc-focus-color: #fb932e;
 }
 :root,
 .sk-client-theme--light {
@@ -524,8 +524,8 @@
   --dt_color-plt-horchata-pressed: #42280d38;
   --dt_color-brand-core-aubergine: #4a154b;
   --dt_color-brand-core-horchatta: #f4ede4;
-  --dt_color-brand-core-black: #0a0e0a;
-  --dt_color-brand-core-white: #33ff00;
+  --dt_color-brand-core-black: #0e0e17;
+  --dt_color-brand-core-white: #ff3845;
   --dt_color-brand-core-slack-blue: #36c5f0;
   --dt_color-brand-core-slack-green: #2eb67d;
   --dt_color-brand-core-slack-yellow: #ecb22e;
@@ -533,7 +533,7 @@
   --dt_color-brand-sec-inactive-gray: #eaeaea;
   --dt_color-brand-sec-legal: #5e5d60;
   --dt_color-brand-sec-small-text: #454447;
-  --dt_color-brand-sec-text: #0a0e0a;
+  --dt_color-brand-sec-text: #0e0e17;
   --dt_color-brand-sec-terracotta: #de8969;
   --dt_color-brand-sec-peach: #fed4be;
   --dt_color-brand-sec-sandbar: #ffd57e;
@@ -770,12 +770,12 @@ body {
 
 * {
   border-radius: 0 !important;
-  border-color: #33ff00 !important;
+  border-color: #ff3845 !important;
 }
 
 .p-theme_background,
 .p-ia4_client .p-view_contents--secondary,
 .p-ia4_client .p-client_workspace__layout {
-  background-color: #0a0e0a !important;
-  color: #33ff00 !important;
+  background-color: #0e0e17 !important;
+  color: #ff3845 !important;
 }
