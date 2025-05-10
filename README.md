@@ -12,7 +12,7 @@
 | **Window Manager**         |                               [Hyprland](https://hyprland.org/)                               |
 | **WayBar**                 |                          [waybar](https://github.com/Alexays/Waybar)                          |
 | **Application Launcher**   |                             [Rofi](https://github.com/lbonn/rofi)                             |
-| **Notification Daemon**    |                                             TODO                                              |
+| **Notification Daemon**    |                        [dunst](https://github.com/dunst-project/dunst)                        |
 | **File Manager**           | [Ranger](https://github.com/ranger/ranger), [Superfile](https://github.com/yorukot/superfile) |
 | **Terminal Emulator**      |                         [Kitty](https://github.com/kovidgoyal/kitty)                          |
 | **Shell**                  |                       [Fish](https://github.com/fish-shell/fish-shell)                        |
