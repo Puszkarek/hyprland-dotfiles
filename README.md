@@ -8,7 +8,7 @@
 
 | Purpose                    |                                             Tool                                              |
 | -------------------------- | :-------------------------------------------------------------------------------------------: |
-| **Lockscreen**             |                                             TODO                                              |
+| **Login Manager**          |                             [sddm](https://github.com/sddm/sddm)                              |
 | **Window Manager**         |                               [Hyprland](https://hyprland.org/)                               |
 | **WayBar**                 |                          [waybar](https://github.com/Alexays/Waybar)                          |
 | **Application Launcher**   |                             [Rofi](https://github.com/lbonn/rofi)                             |
@@ -61,11 +61,11 @@
 
 1. Install dependencies
    ```
-   sudo pacman -S rofi kitty fish waybar
+   sudo pacman -S rofi kitty fish waybar fastfetch
    ```
 1. Install utilities
    ```
-   sudo pacman -S ranger lsd unzip
+   sudo pacman -S ranger lsd unzip hyprpaper
    ```
 1. Run post-install script
    ```
@@ -77,11 +77,11 @@
 
 1. Copy `config` folder to `~/.config`
    ```
-   cp -r ./.config/* ~/.config
+   cp -r .config/* ~/.config
    ```
 1. Copy fonts to `~/.fonts`
    ```
-   mkdir ~/.fonts && cp -r .fonts/* ~/.fonts
+   sudo cp -r fonts/.fonts/* /usr/share/fonts/ && cp -R fonts/fontconfig/* /etc/fonts/
    ```
 1. Copy `zen-browser` files
    ```
@@ -89,8 +89,15 @@
    ```
 1. Copy `icons` folder to `~/.icons`
    ```
-   cp -r .icons/* ~/.icons && cp ./.Xresources ~/.Xresources
+   sudo cp -r .icons/* /usr/share/icons/
    ```
+1. Copy `sddm` theme
+   ```
+   sudo cp -r sddm/* /usr/share/sddm/themes/
+   ```
+   - Go to the `/usr/lib/sddm/sddm.conf.d/default.conf` file
+     - Add `Current=nyxtralis` under `[Theme]`
+     - Add `Session=hyprland.desktop` under `[Autologin]`
 
 ### References
 
