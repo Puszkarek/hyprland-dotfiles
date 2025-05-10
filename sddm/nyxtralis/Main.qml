@@ -38,6 +38,50 @@ Rectangle {
             errorMessage.text = message
         }
     }
+    
+    /* TODO: Finish style setup for this row */
+    Row {
+        spacing: 4
+        width: 300
+        z: 100
+        visible: false
+        
+        Column {
+            z: 100
+            width: parent.width * 1.1
+            spacing : 4
+            anchors.bottom: parent.bottom
+
+            Text {
+                id: lblSession
+                width: parent.width
+                text: textConstants.session
+                wrapMode: TextEdit.WordWrap
+                font.bold: true
+                font.pixelSize: 16
+            }
+
+            ComboBox {
+                id: session
+                width: parent.width; height: 30
+                font.pixelSize: 16
+                model: sessionModel
+                index: sessionModel.lastIndex
+                font.family: "Orbitron"
+
+                color: 'transparent'
+                textColor: neonRed
+                borderColor: neonRed
+                focusColor: neonBlue
+                hoverColor: neonBlue
+                menuColor: popupBackground
+
+                KeyNavigation.backtab: password; KeyNavigation.tab: layoutBox
+                
+            }
+        }
+    }
+
 
 
     Rectangle {
