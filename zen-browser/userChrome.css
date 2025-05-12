@@ -481,12 +481,8 @@ toolbarbutton:active {
 }
 
 .urlbarView-row {
-  &:hover {
-  }
-}
-
-.urlbarView-row {
   margin: 0 3px;
+  color: #2570d4 !important;
   --urlbarView-highlight-color: #ff2e6e;
 
   .urlbarView-favicon {
@@ -498,6 +494,8 @@ toolbarbutton:active {
     background-color: #630c0cd6 !important;
 
     & .urlbarView-url,
+    & .urlbarView-title,
+    & .urlbarView-action,
     & .urlbarView-title-separator::before {
       color: #ff2e6e !important;
     }
@@ -506,9 +504,20 @@ toolbarbutton:active {
   & [selected] {
     --urlbarView-highlight-color: #fb932e;
     color: #fb932e;
-    background-color: #fb932e34 !important;
+    background-color: #630c0cd6 !important;
 
     & .urlbarView-url,
+    & .urlbarView-title,
+    & .urlbarView-action,
+    & .urlbarView-title-separator::before {
+      color: #fb932e !important;
+    }
+  }
+}
+
+.urlbarView-row {
+  &[selected] {
+    & *,
     & .urlbarView-title-separator::before {
       color: #fb932e !important;
     }
@@ -602,13 +611,16 @@ menuitem {
   }
 }
 
-.urlbar-page-action {
-  color: var(--primary-color);
+.urlbarView-title {
+}
+.urlbarView-action {
+  color: var(--primary-color) !important;
   border-radius: 0;
+  --urlbar-box-text-color: var(--primary-color);
   --urlbar-box-hover-bgcolor: transparent;
 }
 
-#urlbar .urlbar-page-action,
+#urlbar .urlbarView-action,
 #urlbar #tracking-protection-icon-container,
 #urlbar:not([breakout-extend='true']) #identity-box:is(:not(.chromeUI), [pageproxystate='invalid']) #identity-icon-box {
   border-radius: 0 !important;
