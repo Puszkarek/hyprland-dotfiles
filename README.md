@@ -52,6 +52,7 @@
 ### Dependencies
 
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+- [grim](https://github.com/emersion/grim)
 - [bard](https://github.com/Puszkarek/bard)
 - [Rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
 - [Kitty](ttps://github.com/kovidgoyal/kitty)
@@ -65,7 +66,7 @@
    ```
 1. Install utilities
    ```
-   sudo pacman -S ranger lsd unzip hyprpaper
+   sudo pacman -S ranger lsd unzip hyprpaper wl-clipboard
    ```
 1. Run post-install script
    ```
@@ -81,7 +82,7 @@
    ```
 1. Copy fonts to `~/.fonts`
    ```
-   sudo cp -r fonts/.fonts/* /usr/share/fonts/ && cp -R fonts/fontconfig/* /etc/fonts/
+   sudo cp -r fonts/.fonts/* /usr/share/fonts/ && cp -R fonts/fontconfig/* ~/.config/fontconfig/
    ```
 1. Copy `zen-browser` files
    ```
