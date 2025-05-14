@@ -342,16 +342,16 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#0e0e17"
-    foreground = "#2570d4"
-    frame_color = "#2570d4"
+    foreground = "#fb932e"
+    frame_color = "#fb932e"
     timeout = 10
     # Icon for notifications with low urgency
     # default_icon = dialog-information
 
 [urgency_normal]
     background = "#0e0e17"
-    foreground = "#ff3845"
-    frame_color = "#ff3845"
+    foreground = "#2570d4"
+    frame_color = "#2570d4"
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency
