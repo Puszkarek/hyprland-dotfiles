@@ -2,7 +2,7 @@
   "tidal_token": "",
   "lyrics_folder": "/home/puszkarek/lyrics",
   "colors": {
-    "default_fg": "green",
+    "default_fg": "red",
     "focused_fg": "yellow"
   }
 }
