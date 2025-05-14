@@ -24,11 +24,6 @@
 | **Font**                   |             [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)              |
 | **Cursor**                 |           [Breeze Hacker](https://github.com/clayrisser/breeze-hacked-cursor-theme)           |
 
-### Dev Info
-
-| - | :--: |
-|**OS**|[Arch Linux](https://archlinux.org/)|
-
 ### Themes
 
 |**Visual Studio Code**|[Wiity Theme](https://marketplace.visualstudio.com/items/?itemName=puszkarek.wiity-vscode-theme)|
@@ -106,7 +101,6 @@
 
 ### TODOs
 
-- [ ] Add screenshots
-- [ ] Add icons theme
-- [ ] Add gnome theme
+- [ ] Create icons theme
+- [ ] Add gnome missing theme
 - [ ] Create script to automate the install
