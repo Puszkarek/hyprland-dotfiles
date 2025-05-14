@@ -114,3 +114,4 @@
 - [ ] Create icons theme
 - [ ] Add gnome missing theme
 - [ ] Create script to automate the install
+- [ ] Add conky on the desktop
