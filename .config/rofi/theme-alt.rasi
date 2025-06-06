@@ -1,0 +1,207 @@
+/******************************************************************************* 
+ * Cyberpunk layout with custom color scheme
+ * Based on: https://github.com/joepigott/dots/blob/3b0aede319a4a0dcee03fdc889730b555ac987fa/rofi/config.rasi 
+ *******************************************************************************/
+
+configuration {
+  display-drun: "";
+  display-window: "Windows: ";
+  drun-display-format: "{name}";
+  modi: "window,run,drun";
+  font: "Orbitron Bold 14";
+  show-icons: false;
+}
+
+* {
+  /* Color definitions from base theme */
+  background-color-main: #0e0e17;
+  foreground-color-main: #2570d4;
+  active-color:          #fb932e;
+  selected-fg:           #0e0e17;
+  border-color-main:     #2570d4;
+  
+  /* Apply the colors */
+  bg: @background-color-main;
+  fg: @foreground-color-main;
+  
+  background-color: transparent;
+  color: @fg;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+    width: 1200;
+    height: 720;
+    background-color: @bg;
+
+}
+
+mainbox {
+    location: center;
+    anchor: center;
+    margin: 0;
+    border: 2;
+    border-color: @foreground-color-main;
+    orientation: horizontal;
+    children: [ "left-container", "main-container", "right-container"];
+}
+
+right-container {
+    expand: false;
+    width: 150;
+    children: [ "textbox-top-spacer", "metadata-right" ];
+}
+
+left-container {
+    orientation: vertical;
+    expand: false;
+    width: 250;
+    children: [ "textbox-top-spacer", "metadata-left" ];
+}
+
+textbox-top-spacer {
+    expand: false;
+    margin: 30 0 30 0;
+}
+
+metadata-right {
+    expand: false;
+    padding: 25 25 25 10;
+    border: 2 0 2 0;
+    border-color: @foreground-color-main;
+    orientation: horizontal;
+    background-color: #2570d433;
+    children: ["textbox-status"];
+}
+
+metadata-left {
+    expand: false;
+    padding: 25;
+    border: 2 0 2 0;
+    border-color: @foreground-color-main;
+    orientation: horizontal;
+    background-color: #2570d433;
+    children: [ "textbox-label" ];
+}
+
+textbox-label {
+    expand: true;
+    content: "NEURAL LINK";
+    border: 2;
+    border-color: transparent;
+    padding: 10 10 10 10;
+}
+
+textbox-status {
+    expand: false;
+    content: "N/A";
+    border: 2;
+    border-color: @foreground-color-main;
+    padding: 10 30 10 30;
+}
+
+main-container {
+    orientation: vertical;
+    expand: false;
+    width: 800;
+    children: [ "textbox-title", "inputbar-wrapper", "listview-wrapper" ];
+}
+
+textbox-title {
+    expand: false;
+    content: "NETRUNNER INTERFACE v2.77";
+    margin: 30 0 30 200;
+}
+
+inputbar-wrapper {
+    border: 2 0 2 0;
+    border-color: @foreground-color-main;
+    background-color: #2570d433;
+    expand: false;
+    children: [ "inputbar"];
+}
+
+prompt {
+    spacing:    0;
+    text-color: @foreground-color-main;
+}
+
+case-indicator {
+    spacing:    0;
+    text-color: @active-foreground;
+}
+
+inputbar {
+    border: 2;
+    padding: 25;
+    margin: 10 30 10 30;
+    border-color: @foreground-color-main;
+    background-color: @bg;
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+listview-wrapper {
+    children: [ "listview-label", "listview" ];
+}
+
+listview-label {
+    expand: false;
+    orientation: horizontal;
+    margin: 25 25 0 25;
+    padding: 8 8 8 30;
+    border: 2 2 0 2;
+    border-color: @foreground-color-main;
+    children: ["textbox-header-label" ];
+}
+
+textbox-header-label {
+    expand: false;
+    padding: 10;
+    content: "SELECT EXECUTABLE";
+}
+
+listview {
+    margin: 0 25 74 25;
+    padding: 0;
+    border: 2;
+    border-color: @foreground-color-main;
+}
+
+element {
+    padding: 20 20 20 40;
+}
+
+element.normal {
+    background-color: transparent;
+}
+
+element.selected {
+    background-color: @foreground-color-main;
+}
+
+element-text.selected {
+    text-color: @selected-fg;
+}
+
+/* Additional styles from your base theme for completeness */
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    text-color: @foreground-color-main;
+}
+
+entry {
+    text-color: @foreground-color-main;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @foreground-color-main;
+}
