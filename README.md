@@ -20,7 +20,7 @@
 | **Icons**                  |                                             TODO                                              |
 | **Music Player**           |                             [cmus](https://github.com/cmus/cmus)                              |
 | **Music Stream**           |                                  [Tidal](https://tidal.com/)                                  |
-| **Music Lyric Visualizer** |                [cmus-auto-lyrics](https://github.com/mzivic7/cmus-auto-lyrics)                |
+| **Music Lyric Visualizer** |                           [bard](https://github.com/Puszkarek/bard)                           |
 | **Font**                   |             [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono)              |
 | **Cursor**                 |           [Breeze Hacker](https://github.com/clayrisser/breeze-hacked-cursor-theme)           |
 
@@ -39,7 +39,7 @@
 | Keybind         | Function                |
 | --------------- | ----------------------- |
 | `Super + Enter` | Launch terminal (kitty) |
-| `Super + D`     | Launch Rofi             |
+| `Super + Space` | Launch Rofi             |
 | `Super + Q`     | Close current window    |
 
 ## Manual Installation (Arch Linux)
@@ -75,6 +75,8 @@
    ```
    cp -r .config/* ~/.config
    ```
+   - Notes:
+     - Waybar it's set to only show on my monitor, so you might want to edit the `waybar/config` file to fit your setup.
 1. Copy fonts to `~/.fonts`
    ```
    sudo cp -r fonts/.fonts/* /usr/share/fonts/ && cp -R fonts/fontconfig/* ~/.config/fontconfig/
