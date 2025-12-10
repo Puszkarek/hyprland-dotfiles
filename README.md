@@ -99,7 +99,7 @@
 
 #### VS Code
 
-1. Right now it does not include gtk themes, so the dialogs inside vscode will look different, for a temporary fix I'm using `window.dialogStyle: custom` in the settings.json file.
+1. Right now it does not fully support gtk themes, so the dialogs inside vscode will look different, for a temporary fix I'm using `window.dialogStyle: custom` in the settings.json file.
 
 ### Screenshots
 

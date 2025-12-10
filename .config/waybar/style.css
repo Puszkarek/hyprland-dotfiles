@@ -5,6 +5,7 @@
   font-family: 'Orbitron';
   font-weight: 500;
   font-size: 1rem;
+  background: none;
   padding: 0;
 }
 
@@ -51,19 +52,27 @@ tooltip label {
   color: #fb932e;
 }
 
-#workspaces button.active {
+#workspaces > .active {
   background-color: #ff3845;
+  border-color: #ff0077;
+}
+#workspaces button.active * {
   color: #0e0e17;
 }
 
-#workspaces button.special {
+#workspaces > .special {
   background-color: #2570d4;
   border-color: #2570d4;
 }
+#workspaces button.special * {
+  color: #0e0e17;
+}
 
-#workspaces button.urgent {
+#workspaces > .urgent {
   background-color: #ff0077;
   border-color: #ff0077;
+}
+#workspaces button.urgent * {
   color: #0e0e17;
 }
 
