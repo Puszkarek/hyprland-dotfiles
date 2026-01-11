@@ -57,11 +57,11 @@
 
 1. Install dependencies
    ```
-   sudo pacman -S rofi kitty fish waybar fastfetch
+   sudo pacman -S rofi kitty fish waybar fastfetch hyprpaper hypridle
    ```
 1. Install utilities
    ```
-   sudo pacman -S ranger lsd unzip hyprpaper wl-clipboard
+   sudo pacman -S ranger lsd unzip wl-clipboard grim cowsaw fortune-mod sl
    ```
 1. Run post-install script
    ```

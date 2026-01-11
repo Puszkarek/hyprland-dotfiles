@@ -21,3 +21,4 @@ end
 set --erase _asdf_shims
 
 fastfetch
+fortune | cowsay
