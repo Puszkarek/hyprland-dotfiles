@@ -21,4 +21,14 @@ end
 set --erase _asdf_shims
 
 fastfetch
-fortune | cowsay
+fortune | cowsay | awk -v width=(tput cols) '{
+    lines[NR] = $0
+    if (length($0) > max) max = length($0)
+}
+END {
+    pad = int((width - max) / 2)
+    for (i=1; i<=NR; i++) {
+        for (k=0; k<pad; k++) printf " "
+        print lines[i]
+    }
+}'
