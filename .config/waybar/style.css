@@ -30,7 +30,6 @@ tooltip label {
 #memory,
 #battery,
 #network,
-#battery,
 #custom-cava,
 #temperature {
   padding: 6px 12px;
@@ -42,14 +41,6 @@ tooltip label {
   padding: 0 12px;
   margin-right: 6px;
   color: #ff3845;
-}
-
-#workspaces button:hover {
-  box-shadow: none; /* Remove predefined box-shadow */
-  text-shadow: none; /* Remove predefined text-shadow */
-  background: none; /* Remove predefined background color (white) */
-  transition: none; /* Disable predefined animations */
-  color: #fb932e;
 }
 
 #workspaces > .active {
@@ -76,6 +67,17 @@ tooltip label {
   color: #0e0e17;
 }
 
+#workspaces button:hover {
+  box-shadow: none; /* Remove predefined box-shadow */
+  text-shadow: none; /* Remove predefined text-shadow */
+  background: none; /* Remove predefined background color (white) */
+  transition: none; /* Disable predefined animations */
+}
+
+#workspaces button:hover * {
+  color: #ff3845;
+}
+
 #clock {
   background-color: #0e0e17;
   border: 1px solid #ff3845;
@@ -92,6 +94,7 @@ tooltip label {
 #memory,
 #network,
 #battery,
+#tray,
 #custom-cava,
 #temperature {
   background-color: #0e0e17;

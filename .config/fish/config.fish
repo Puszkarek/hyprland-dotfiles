@@ -20,6 +20,8 @@ if not contains $_asdf_shims $PATH
 end
 set --erase _asdf_shims
 
+set -x COWPATH $HOME/.config/cows $COWPATH
+
 fastfetch
 fortune | cowsay | awk -v width=(tput cols) '{
     lines[NR] = $0

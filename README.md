@@ -61,7 +61,7 @@
    ```
 1. Install utilities
    ```
-   sudo pacman -S ranger lsd unzip wl-clipboard grim cowsaw fortune-mod sl
+   sudo pacman -S ranger lsd unzip wl-clipboard grim cowsaw fortune-mod sl noto-fonts-cjk
    ```
 1. Run post-install script
    ```
