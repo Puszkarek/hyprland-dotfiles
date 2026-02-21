@@ -117,6 +117,7 @@ tooltip label {
 }
 
 #battery.charging {
+  background-color: #0e0e17;
   border: 1px solid #2570d4;
   color: #2570d4;
 }
